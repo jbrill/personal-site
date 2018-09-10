@@ -1,0 +1,35 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #F7F7F7;
+}
+
+#titleName, #titleDesc {
+    margin-left: 4%;
+    float: left;
+}
+
+#titleDesc {
+    color: #C0102C;
+    margin-top: -20px;
+}
+
+#titleHold {
+    display: inline-block;
+}
+
+#avatarImg {
+    height: auto;
+    width: 10%;
+    right: 4%;
+    bottom: 4%;
+    position: absolute;
+    cursor: pointer;
+}
+
+.shadowed {
+    -webkit-filter: drop-shadow(5px 5px 5px #222 );
+    filter: drop-shadow(5px 5px 5px #222);
+}
