@@ -1,0 +1,314 @@
+<template>
+<div>
+<div class="content__contain">
+      <div class="content__contain__left">
+        <div class="profile__contain">
+          <div id="orangeContain"><img :src="`${publicPath}avatar.svg`" /></div>
+          <h1 class="title__contain">JASON BRILL</h1>
+        </div>
+        <ul class="menu__contain">
+          <li>ABOUT</li>
+          <li>PHOTOGRAPHY</li>
+          <li>WRITING</li>
+          <li>RESUME</li>
+        </ul>
+      </div>
+      <div class="content__contain__right">
+        <p class="about__contain about__contain__header">👋</p>
+        <p class="about__contain">
+          I am an artist and engineer looking to redefine the way in which
+          people interact with their environments
+        </p>
+        <p class="about__contain">I specialize in full stack web development</p>
+        <p class="about__contain">
+          Currently with Clinc, bringing conversational AI to the world
+        </p>
+        <p class="about__contain">
+          I plan on obtaining a graduate degree in Human-Computer Interaction in
+          the near future
+        </p>
+      </div>
+    </div>
+    <div class="bottom__feeder__contain">
+      <div class="outbound__contain">
+        <span class="outbound__contain__contact"
+          ><a href="jbrill95@gmail.com">EMAIL</a></span
+        >
+        //
+        <span class="outbound__contain__contact"
+          ><a href="https://twitter.com/jbrill_" target="_blank"
+            >TWITTER</a
+          ></span
+        >
+        //
+        <span class="outbound__contain__contact"
+          ><a href="https://www.instagram.com/jbrlly/" target="_blank"
+            >INSTAGRAM</a
+          ></span
+        >
+        //
+        <span class="outbound__contain__contact"
+          ><a href="https://github.com/jbrill" target="_blank">GITHUB</a></span
+        >
+      </div>
+      <div class="lower__copyright">COPYRIGHT © JASON BRILL</div>
+    </div>
+</div>
+</template>
+
+<script>
+export default {
+  name: 'About',
+  data () {
+    return {
+      publicPath: process.env.BASE_URL
+    }
+  }
+}
+</script>
+
+<style>
+html {
+  font-family: "Proxima Nova";
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: white;
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  margin-top: 4%;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  /* display: grid;
+  grid-template-rows: 90% 10%; */
+}
+
+#orangeContain {
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: auto;
+  background-color: #ffa531;
+}
+
+#orangeContain:hover {
+  cursor: alias;
+}
+
+.content__contain {
+  width: 100%;
+}
+
+.title__contain {
+  font-weight: 400;
+  font-size: 100%;
+  letter-spacing: 0.3rem;
+  width: 40%;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  transition: opacity 0.3s ease-out;
+  -moz-transition: opacity 0.3s ease-out;
+  -webkit-transition: opacity 0.3s ease-out;
+  -o-transition: opacity 0.3s ease-out;
+}
+
+.title__contain:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.3s ease-out;
+  -moz-transition: opacity 0.3s ease-out;
+  -webkit-transition: opacity 0.3s ease-out;
+  -o-transition: opacity 0.3s ease-out;
+}
+
+.content__contain__left {
+  float: left;
+  width: 30%;
+}
+
+.content__contain__right {
+  float: right;
+  width: 70%;
+  height: 100%;
+  font-size: 30px;
+  margin-top: 3rem;
+}
+
+.menu__contain {
+  list-style: none;
+  margin-top: 4rem;
+  width: 100%;
+  margin-bottom: 0;
+  padding-left: 1.2rem;
+}
+
+.menu__contain li {
+  margin-bottom: 2em;
+  width: 100%;
+  font-size: 100%;
+}
+
+.menu__contain li:hover {
+  cursor: pointer;
+  text-decoration: line-through;
+}
+
+.about__contain {
+  width: 90%;
+  font-weight: lighter;
+  font-size: 100%;
+  margin-bottom: 2rem;
+}
+
+.about__contain__header {
+  font-style: normal;
+}
+
+.outbound__contain {
+  bottom: 0;
+  right: 2rem;
+  font-size: 1rem;
+  padding-bottom: 10px;
+  font-style: oblique;
+  text-align: right;
+}
+
+.outbound__contain__contact:hover {
+  cursor: pointer;
+  background-color: orange;
+}
+
+.outbound__contain a {
+  text-decoration: none;
+  color: black;
+}
+.bottom__feeder__contain {
+  position: absolute;
+  bottom: 5px;
+  right: 20px;
+}
+.lower__copyright {
+  bottom: 0;
+  margin: 0 auto;
+  width: 100%;
+  padding-bottom: 10px;
+  text-align: right;
+  left: 2rem; /* approx */
+  opacity: 0.6;
+  font-size: 0.3rem;
+  font-weight: 100;
+  z-index: -10;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+::selection {
+  background: #ffa531;
+}
+
+#orangeContain {
+  background: linear-gradient(
+    124deg,
+    #ff2400,
+    #e81d1d,
+    #e8b71d,
+    #e3e81d,
+    #1de840,
+    #1ddde8,
+    #2b1de8,
+    #dd00f3,
+    #dd00f3
+  );
+  background-size: 1800% 1800%;
+
+  -webkit-animation: rainbow 60s ease infinite;
+  -z-animation: rainbow 60s ease infinite;
+  -o-animation: rainbow 60s ease infinite;
+  animation: rainbow 60s ease infinite;
+}
+
+@-webkit-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@-moz-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@-o-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .content__contain__left {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .profile__contain {
+    float: left;
+    width: 30%;
+  }
+  .menu__contain {
+    float: right;
+    width: 65%;
+    margin-top: 0;
+    padding-left: 0;
+    text-align: right;
+  }
+  .content__contain__right {
+    width: 100%;
+    margin-top: 0;
+  }
+  .bottom__feeder__contain {
+    position: relative;
+  }
+}
+
+</style>
