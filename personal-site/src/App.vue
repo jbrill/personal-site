@@ -1,20 +1,19 @@
 <template>
   <div id="app">
     <!-- Got more soul than a sock with a hole -->
-    <About />
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import About from './components/About.vue'
+import Home from "./components/Home.vue";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    About 
+    Home
   }
-}
+};
 </script>
 
-<style>
-</style>
+<style></style>
