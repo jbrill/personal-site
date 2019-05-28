@@ -1,68 +1,3 @@
-<template>
-  <div>
-    <div class="content__contain">
-      <div class="content__contain__left">
-        <div class="profile__contain">
-          <router-link to="/"
-            ><div id="orangeContain">
-              <img :src="`${publicPath}avatar.svg`" /></div
-          ></router-link>
-          <router-link to="/"
-            ><h1 class="title__contain">JASON BRILL</h1></router-link
-          >
-        </div>
-        <ul class="menu__contain">
-          <router-link to="/about" tag="li">WHO I AM</router-link>
-          <!-- <router-link to="/work" tag="li">WORK</router-link> -->
-          <router-link to="/photography" tag="li">PHOTOS</router-link>
-          <!-- <router-link to="/music" tag="li">MUSIC</router-link> -->
-        </ul>
-      </div>
-      <div class="content__contain__right">
-        <slot></slot>
-        <div class="bottom__feed__contain">
-          <div class="outbound__contain">
-            <span class="outbound__contain__contact"
-              ><a href="jbrill95@gmail.com">EMAIL</a></span
-            >
-            //
-            <span class="outbound__contain__contact"
-              ><a href="https://twitter.com/jbrill_" target="_blank"
-                >TWITTER</a
-              ></span
-            >
-            //
-            <span class="outbound__contain__contact"
-              ><a href="https://www.soundcloud.com/brillay/" target="_blank"
-                >SOUNDCLOUD</a
-              ></span
-            >
-            //
-            <span class="outbound__contain__contact"
-              ><a href="https://github.com/jbrill" target="_blank"
-                >GITHUB</a
-              ></span
-            >
-          </div>
-          <div class="lower__copyright">COPYRIGHT © JASON BRILL</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</template>
-
-<script>
-export default {
-  name: "Base",
-  data() {
-    return {
-      publicPath: process.env.BASE_URL
-    };
-  }
-};
-</script>
-
-<style>
 html {
   font-family: "Proxima Nova";
   width: 100%;
@@ -79,11 +14,8 @@ body {
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
   animation-duration: 1s;
-}
-
-a {
-  text-decoration: none;
-  color: black;
+  /* display: grid;
+  grid-template-rows: 90% 10%; */
 }
 
 #orangeContain {
@@ -100,14 +32,6 @@ a {
 
 .content__contain {
   width: 100%;
-  animation-name: fadeInOpacity;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  animation-duration: 1s;
-  transition: opacity 0.3s ease-out;
-  -moz-transition: opacity 0.3s ease-out;
-  -webkit-transition: opacity 0.3s ease-out;
-  -o-transition: opacity 0.3s ease-out;
 }
 
 .title__contain {
@@ -136,13 +60,14 @@ a {
 
 .content__contain__left {
   float: left;
-  width: 25%;
+  width: 30%;
 }
 
 .content__contain__right {
-  width: 75%;
   float: right;
-  font-size: 1.5rem;
+  width: 70%;
+  height: 100%;
+  font-size: 30px;
   margin-top: 3rem;
 }
 
@@ -156,6 +81,8 @@ a {
 
 .menu__contain li {
   margin-bottom: 2em;
+  width: 100%;
+  font-size: 100%;
 }
 
 .menu__contain li:hover {
@@ -164,8 +91,9 @@ a {
 }
 
 .about__contain {
-  width: 80%;
+  width: 90%;
   font-weight: lighter;
+  font-size: 100%;
   margin-bottom: 2rem;
 }
 
@@ -176,7 +104,7 @@ a {
 .outbound__contain {
   bottom: 0;
   right: 2rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
   padding-bottom: 10px;
   font-style: oblique;
   text-align: right;
@@ -191,14 +119,11 @@ a {
   text-decoration: none;
   color: black;
 }
-.bottom__feed__contain {
-  position: fixed;
-  right: 20px;
-  bottom: 0;
-  min-width: 20%;
-  /* z-index: -10; */
+.bottom__feeder__contain {
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
 }
-
 .lower__copyright {
   bottom: 0;
   margin: 0 auto;
@@ -301,19 +226,20 @@ a {
     width: 30%;
   }
   .menu__contain {
-    width: 70%;
+    float: right;
+    width: 65%;
     margin-top: 0;
     padding-left: 0;
     text-align: right;
   }
   .content__contain__right {
     width: 100%;
-    height: 100%;
-    overflow: auto;
     margin-top: 0;
   }
-  .bottom__feed__contain {
+  .bottom__feeder__contain {
     position: relative;
   }
+  .canvas__contain {
+    width: 100%;
+  }
 }
-</style>
