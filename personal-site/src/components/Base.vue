@@ -12,37 +12,41 @@
           >
         </div>
         <ul class="menu__contain">
-          <router-link to="/about" tag="li">ABOUT</router-link>
-          <router-link to="/work" tag="li">WORK</router-link>
-          <router-link to="/photography" tag="li">PHOTOGRAPHY</router-link>
-          <router-link to="/music" tag="li">MUSIC</router-link>
+          <router-link to="/about" tag="li">WHO I AM</router-link>
+          <!-- <router-link to="/work" tag="li">WORK</router-link> -->
+          <router-link to="/photography" tag="li">PHOTOS</router-link>
+          <!-- <router-link to="/music" tag="li">MUSIC</router-link> -->
         </ul>
       </div>
-      <slot></slot>
-    </div>
-    <div class="bottom__feeder__contain">
-      <div class="outbound__contain">
-        <span class="outbound__contain__contact"
-          ><a href="jbrill95@gmail.com">EMAIL</a></span
-        >
-        //
-        <span class="outbound__contain__contact"
-          ><a href="https://twitter.com/jbrill_" target="_blank"
-            >TWITTER</a
-          ></span
-        >
-        //
-        <span class="outbound__contain__contact"
-          ><a href="https://www.instagram.com/jbrlly/" target="_blank"
-            >INSTAGRAM</a
-          ></span
-        >
-        //
-        <span class="outbound__contain__contact"
-          ><a href="https://github.com/jbrill" target="_blank">GITHUB</a></span
-        >
+      <div class="content__contain__right">
+        <slot></slot>
+        <div class="bottom__feed__contain">
+          <div class="outbound__contain">
+            <span class="outbound__contain__contact"
+              ><a href="jbrill95@gmail.com">EMAIL</a></span
+            >
+            //
+            <span class="outbound__contain__contact"
+              ><a href="https://twitter.com/jbrill_" target="_blank"
+                >TWITTER</a
+              ></span
+            >
+            //
+            <span class="outbound__contain__contact"
+              ><a href="https://www.soundcloud.com/brillay/" target="_blank"
+                >SOUNDCLOUD</a
+              ></span
+            >
+            //
+            <span class="outbound__contain__contact"
+              ><a href="https://github.com/jbrill" target="_blank"
+                >GITHUB</a
+              ></span
+            >
+          </div>
+          <div class="lower__copyright">COPYRIGHT © JASON BRILL</div>
+        </div>
       </div>
-      <div class="lower__copyright">COPYRIGHT © JASON BRILL</div>
     </div>
   </div>
 </template>
@@ -75,8 +79,6 @@ body {
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
   animation-duration: 1s;
-  /* display: grid;
-  grid-template-rows: 90% 10%; */
 }
 
 a {
@@ -98,6 +100,14 @@ a {
 
 .content__contain {
   width: 100%;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  transition: opacity 0.3s ease-out;
+  -moz-transition: opacity 0.3s ease-out;
+  -webkit-transition: opacity 0.3s ease-out;
+  -o-transition: opacity 0.3s ease-out;
 }
 
 .title__contain {
@@ -126,14 +136,13 @@ a {
 
 .content__contain__left {
   float: left;
-  width: 30%;
+  width: 25%;
 }
 
 .content__contain__right {
+  width: 75%;
   float: right;
-  width: 70%;
-  height: 100%;
-  font-size: 30px;
+  font-size: 1.5rem;
   margin-top: 3rem;
 }
 
@@ -147,8 +156,6 @@ a {
 
 .menu__contain li {
   margin-bottom: 2em;
-  width: 100%;
-  font-size: 100%;
 }
 
 .menu__contain li:hover {
@@ -157,9 +164,8 @@ a {
 }
 
 .about__contain {
-  width: 90%;
+  width: 80%;
   font-weight: lighter;
-  font-size: 100%;
   margin-bottom: 2rem;
 }
 
@@ -170,7 +176,7 @@ a {
 .outbound__contain {
   bottom: 0;
   right: 2rem;
-  font-size: 1rem;
+  font-size: 0.8rem;
   padding-bottom: 10px;
   font-style: oblique;
   text-align: right;
@@ -185,11 +191,14 @@ a {
   text-decoration: none;
   color: black;
 }
-.bottom__feeder__contain {
-  position: absolute;
-  bottom: 5px;
+.bottom__feed__contain {
+  position: fixed;
   right: 20px;
+  bottom: 0;
+  min-width: 20%;
+  /* z-index: -10; */
 }
+
 .lower__copyright {
   bottom: 0;
   margin: 0 auto;
@@ -292,17 +301,18 @@ a {
     width: 30%;
   }
   .menu__contain {
-    float: right;
-    width: 65%;
+    width: 70%;
     margin-top: 0;
     padding-left: 0;
     text-align: right;
   }
   .content__contain__right {
     width: 100%;
+    height: 100%;
+    overflow: auto;
     margin-top: 0;
   }
-  .bottom__feeder__contain {
+  .bottom__feed__contain {
     position: relative;
   }
 }
