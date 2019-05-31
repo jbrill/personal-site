@@ -12,9 +12,11 @@
           >
         </div>
         <ul class="menu__contain">
-          <router-link to="/about" tag="li">WHO I AM</router-link>
+          <router-link to="/about" tag="li">WHO AM I</router-link>
           <!-- <router-link to="/work" tag="li">WORK</router-link> -->
-          <router-link to="/photography" tag="li">PHOTOS</router-link>
+          <router-link to="/work" tag="li">WORK</router-link>
+
+          <router-link to="/photography" tag="li">PHOTOGRAPHY</router-link>
           <!-- <router-link to="/music" tag="li">MUSIC</router-link> -->
         </ul>
       </div>
@@ -184,7 +186,7 @@ a {
 
 .outbound__contain__contact:hover {
   cursor: pointer;
-  background-color: orange;
+  background-color: coral;
 }
 
 .outbound__contain a {
@@ -291,7 +293,7 @@ a {
   }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 800px) {
   .content__contain__left {
     width: 100%;
     margin-top: 1rem;
@@ -301,7 +303,6 @@ a {
     width: 30%;
   }
   .menu__contain {
-    width: 70%;
     margin-top: 0;
     padding-left: 0;
     text-align: right;

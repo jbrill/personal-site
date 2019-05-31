@@ -169,6 +169,10 @@ export default {
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
   animation-duration: 1s;
+  transition: opacity 0.3s ease-out;
+  -moz-transition: opacity 0.3s ease-out;
+  -webkit-transition: opacity 0.3s ease-out;
+  -o-transition: opacity 0.3s ease-out;
 }
 .photo__stream__img:hover {
   cursor: pointer;

@@ -2,6 +2,7 @@
   <div>
     <Base>
       <!-- Based off https://codepen.io/franky/pen/LGMWPK -->
+
       <canvas ref="canvas" class="canvas__contain"></canvas>
     </Base>
   </div>
@@ -87,9 +88,9 @@ export default {
 
     var ParticleNetwork = function(parent) {
       this.options = {
-        velocity: 0.9, // the higher the faster
-        density: 12000, // the lower the denser
-        netLineDistance: 200,
+        velocity: 0.4, // the higher the faster
+        density: 10000, // the lower the denser
+        netLineDistance: 100,
         netLineColor: "#5DC0E8",
         particleColors: ["#FFFFFF"]
       };
@@ -129,7 +130,7 @@ export default {
             }
             counter++;
           }.bind(this),
-          30
+          50
         );
       } else {
         // Create particle objects
@@ -234,10 +235,84 @@ export default {
 
 <style>
 .canvas__contain {
-  width: calc(100% - 10rem);
+  width: 100%;
   border-radius: 2px;
-  background-color: none;
-  margin-top: 2rem;
-  padding-bottom: 2rem;
+  background: linear-gradient(
+    124deg,
+    #ff2400,
+    #e81d1d,
+    #e8b71d,
+    #e3e81d,
+    #1de840,
+    #1ddde8,
+    #2b1de8,
+    #dd00f3,
+    #dd00f3
+  );
+  background-size: 1800% 1800%;
+  background-color: #ffa531;
+  margin-bottom: 20%;
+  -webkit-animation: rainbow 60s ease infinite;
+  -z-animation: rainbow 60s ease infinite;
+  -o-animation: rainbow 60s ease infinite;
+  animation: rainbow 60s ease infinite;
+  transition: opacity 0.3s ease-out;
+  -moz-transition: opacity 0.3s ease-out;
+  -webkit-transition: opacity 0.3s ease-out;
+  -o-transition: opacity 0.3s ease-out;
+}
+
+@-webkit-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@-moz-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@-o-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+
+.canvas__contain:hover {
+  opacity: 0.7;
+  cursor: pointer;
+  transition: opacity 0.3s ease-out;
+  -moz-transition: opacity 0.3s ease-out;
+  -webkit-transition: opacity 0.3s ease-out;
+  -o-transition: opacity 0.3s ease-out;
 }
 </style>
