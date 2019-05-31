@@ -3,7 +3,7 @@ import Router from "vue-router";
 import App from "./App.vue";
 import About from "./components/About.vue";
 import Home from "./components/Home.vue";
-import Music from "./components/Music.vue";
+import Work from "./components/Work.vue";
 import Photos from "./components/Photos.vue";
 Vue.use(Router);
 
@@ -23,17 +23,12 @@ const router = new Router({
     {
       path: "/work",
       name: "work",
-      component: About
+      component: Work
     },
     {
       path: "/photography",
       name: "photography",
       component: Photos
-    },
-    {
-      path: "/music",
-      name: "music",
-      component: Music
     }
   ]
 });
