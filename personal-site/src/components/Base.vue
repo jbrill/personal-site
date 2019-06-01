@@ -14,7 +14,6 @@
         <ul class="menu__contain">
           <router-link to="/about" tag="li">WHO AM I</router-link>
           <!-- <router-link to="/work" tag="li">WORK</router-link> -->
-          <router-link to="/work" tag="li">WORK</router-link>
 
           <router-link to="/photography" tag="li">PHOTOGRAPHY</router-link>
           <!-- <router-link to="/music" tag="li">MUSIC</router-link> -->
@@ -29,9 +28,7 @@
             >
             //
             <span class="outbound__contain__contact"
-              ><a href="https://twitter.com/jbrill_" target="_blank"
-                >TWITTER</a
-              ></span
+              ><a href="resume" target="_blank">RESUME</a></span
             >
             //
             <span class="outbound__contain__contact"

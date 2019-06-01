@@ -25,14 +25,6 @@ export default {
   components: {
     Base,
     VueRssFeed
-  },
-  data() {
-    return {
-      feedUrl:
-        "https://api.flickr.com/services/feeds/photos_public.gne?id=101710608@N06&lang=en-us&format=rss_200",
-      name: "",
-      limit: 5
-    };
   }
 };
 </script>
