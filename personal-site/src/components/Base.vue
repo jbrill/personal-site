@@ -24,11 +24,15 @@
         <div class="bottom__feed__contain">
           <div class="outbound__contain">
             <span class="outbound__contain__contact"
-              ><a href="jbrill95@gmail.com">EMAIL</a></span
+              ><a href="mailto:jbrill95@gmail.com">EMAIL</a></span
             >
             //
             <span class="outbound__contain__contact"
-              ><a href="resume" target="_blank">RESUME</a></span
+              ><a
+                href="https://drive.google.com/file/d/134qFAeXeUm6T9gdjxfHFVPGYUuWNcB6m/view?usp=sharing"
+                target="_blank"
+                >RESUME</a
+              ></span
             >
             //
             <span class="outbound__contain__contact"
