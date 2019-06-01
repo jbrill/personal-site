@@ -5,6 +5,7 @@ import About from "./components/About.vue";
 import Home from "./components/Home.vue";
 import Work from "./components/Work.vue";
 import Photos from "./components/Photos.vue";
+import Resume from "./components/Resume.vue";
 Vue.use(Router);
 
 const router = new Router({
@@ -29,6 +30,11 @@ const router = new Router({
       path: "/photography",
       name: "photography",
       component: Photos
+    },
+    {
+      path: "/resume",
+      name: "resume",
+      component: Resume
     }
   ]
 });

@@ -101,7 +101,7 @@
 import Base from "./Base.vue";
 
 export default {
-  name: "About",
+  name: "Work",
   components: {
     Base
   }
