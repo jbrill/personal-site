@@ -13,7 +13,7 @@
         </div>
         <ul class="menu__contain">
           <router-link to="/about" tag="li">WHO AM I</router-link>
-          <!-- <router-link to="/work" tag="li">WORK</router-link> -->
+          <router-link to="/work" tag="li">WORK</router-link>
 
           <router-link to="/photography" tag="li">PHOTOGRAPHY</router-link>
           <!-- <router-link to="/music" tag="li">MUSIC</router-link> -->

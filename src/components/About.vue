@@ -4,7 +4,7 @@
       <p class="about__contain about__contain__header">👋 🌎</p>
       <p class="about__contain">
         I am an artist and engineer looking to impact the way in which people
-        interact with their environments
+        interact with their environments.
       </p>
       <p class="about__contain">
         I specialize in full stack web development, and am currently redefining
@@ -14,13 +14,13 @@
           target="_blank"
           href="https://clinc.com/"
           >Clinc</a
-        >
+        >.
       </p>
       <p class="about__contain">
         I plan on obtaining a graduate degree in Human-Computer Interaction in
         the near future to better understand the
         <span class="about__contain__italic">why</span> rather than the
-        <span class="about__contain__italic">how</span>
+        <span class="about__contain__italic">how</span>.
       </p>
     </Base>
   </div>
