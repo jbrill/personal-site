@@ -47,7 +47,9 @@
               ></span
             >
           </div>
-          <div class="lower__copyright">COPYRIGHT © JASON BRILL</div>
+          <div class="lower__copyright">
+            MADE WITH ❤️ | COPYRIGHT © JASON BRILL
+          </div>
         </div>
       </div>
     </div>

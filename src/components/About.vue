@@ -14,11 +14,13 @@
           target="_blank"
           href="https://clinc.com/"
           >Clinc</a
-        >
+        >.
       </p>
       <p class="about__contain">
         I plan on obtaining a graduate degree in Human-Computer Interaction in
-        the near future
+        the near future to better understand the
+        <span class="about__contain__italic">why</span> rather than the
+        <span class="about__contain__italic">how</span>.
       </p>
     </Base>
   </div>
@@ -41,5 +43,8 @@ export default {
 }
 .about__contain {
   margin-bottom: 10%;
+}
+.about__contain__italic {
+  font-style: italic;
 }
 </style>
