@@ -22,6 +22,9 @@
         <span class="about__contain__italic">why</span> rather than the
         <span class="about__contain__italic">how</span>.
       </p>
+      <p class="about__contain">
+        Currently in Los Angeles.
+      </p>
     </Base>
   </div>
 </template>
@@ -43,6 +46,7 @@ export default {
 }
 .about__contain {
   margin-bottom: 10%;
+  font-weight: normal;
 }
 .about__contain__italic {
   font-style: italic;

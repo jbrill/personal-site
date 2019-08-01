@@ -131,6 +131,7 @@ export default {
   background-color: black;
   box-sizing: border-box;
 }
+
 .projects__project::before {
   content: "";
   display: block;
@@ -151,26 +152,10 @@ export default {
   font-size: 1.5rem;
   padding-top: 20px;
   font-weight: bold;
+  color: black;
 }
-
-#vietnam__project {
+#vietnam__project .projects__project__content {
   background-image: url("~@/assets/images/bikeshop.jpg");
-  background-size: cover;
-}
-#china__project {
-  background-image: url("~@/assets/images/baby.jpg");
-  background-size: cover;
-}
-#technology__project {
-  background-image: url("~@/assets/images/steel.jpg");
-  background-size: cover;
-}
-#south_africa__project {
-  background-image: url("~@/assets/images/cheetah.jpg");
-  background-size: cover;
-}
-#etc__project {
-  background-image: url("~@/assets/images/clouds.jpg");
   background-size: cover;
 }
 </style>

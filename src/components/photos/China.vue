@@ -135,25 +135,4 @@ export default {
   font-size: 1.2rem;
   padding-top: 20px;
 }
-
-#vietnam__project {
-  background-image: url("~@/assets/images/bikeshop.jpg");
-  background-size: cover;
-}
-#china__project {
-  background-image: url("~@/assets/images/bikeshop.jpg");
-  background-size: cover;
-}
-#technology__project {
-  background-image: url("~@/assets/images/bikeshop.jpg");
-  background-size: cover;
-}
-#south_africa__project {
-  background-image: url("~@/assets/images/bikeshop.jpg");
-  background-size: cover;
-}
-#etc__project {
-  background-image: url("~@/assets/images/bikeshop.jpg");
-  background-size: cover;
-}
 </style>

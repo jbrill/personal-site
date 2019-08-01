@@ -11,4 +11,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+html {
+  font-family: "Montserrat", sans-serif;
+}
+</style>
