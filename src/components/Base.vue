@@ -29,23 +29,18 @@
             //
             <span class="outbound__contain__contact"
               ><a
-                href="https://drive.google.com/file/d/134qFAeXeUm6T9gdjxfHFVPGYUuWNcB6m/view?usp=sharing"
+                href="https://flickr.com/photos/jlbrill"
                 target="_blank"
-                >RESUME</a
+                >PHOTOS</a
               ></span
             >
             //
             <span class="outbound__contain__contact"
               ><a href="https://www.soundcloud.com/brillay/" target="_blank"
-                >SOUNDCLOUD</a
+                >MUSIC</a
               ></span
             >
             //
-            <span class="outbound__contain__contact"
-              ><a href="https://github.com/jbrill" target="_blank"
-                >GITHUB</a
-              ></span
-            >
           </div>
           <div class="lower__copyright">
             MADE WITH ❤️ | COPYRIGHT © JASON BRILL
