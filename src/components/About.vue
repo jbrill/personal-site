@@ -1,7 +1,6 @@
 <template>
   <div>
     <Base>
-      <p class="about__contain about__contain__header">👋 🌎</p>
       <p class="about__contain">
         I am an artist and engineer looking to impact the way in which people
         interact with their environments
@@ -14,16 +13,16 @@
           target="_blank"
           href="https://clinc.com/"
           >Clinc</a
-        >.
+        >
       </p>
       <p class="about__contain">
         I plan on obtaining a graduate degree in Human-Computer Interaction in
         the near future to better understand the
         <span class="about__contain__italic">why</span> rather than the
-        <span class="about__contain__italic">how</span>.
+        <span class="about__contain__italic">how</span>
       </p>
       <p class="about__contain">
-        Currently in Los Angeles.
+        Currently, Los Angeles
       </p>
     </Base>
   </div>
@@ -44,11 +43,20 @@ export default {
 .about__contain__outbound-link:hover {
   background-color: coral;
 }
+.about__contain__outbound-link {
+  margin-bottom: 10%;
+  font-weight: bolder;
+  color: purple;
+}
 .about__contain {
   margin-bottom: 10%;
   font-weight: normal;
+  color: purple;
 }
 .about__contain__italic {
   font-style: italic;
+}
+.about__contain:hover {
+  opacity: 0.7;
 }
 </style>
