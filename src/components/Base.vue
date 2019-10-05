@@ -156,6 +156,8 @@ a {
 
 .menu__contain li {
   margin-bottom: 2em;
+  color: purple;
+  font-weight: bolder;
 }
 
 .menu__contain li:hover {
@@ -180,6 +182,7 @@ a {
   padding-bottom: 10px;
   font-style: oblique;
   text-align: right;
+  color: purple;
 }
 
 .outbound__contain__contact:hover {
