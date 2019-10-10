@@ -19,7 +19,7 @@
         I plan on obtaining a graduate degree in Human-Computer Interaction in
         the near future to better understand the
         <span class="about__contain__italic">why</span> rather than the
-        <span class="about__contain__italic">how</span>
+	<span class="about__contain__italic">how</span><a href="https://knowledge.wharton.upenn.edu/article/constantly-challenging-assumptions-frog-designs-jan-chipchase-has-a-question-for-companies-how-do-you-know-youre-innovative" target="_blank" class="about__contain__footnote">[1]</a>
       </p>
       <p class="about__contain">
         Currently, Los Angeles
@@ -46,12 +46,19 @@ export default {
 .about__contain__outbound-link {
   margin-bottom: 10%;
   font-weight: bolder;
-  color: purple;
+  color: navy;
+}
+.about__contain__footnote {
+  font-size: 30%;
+  margin-top: -5px;
+}
+.about__contain__footnote:hover {
+  cursor: pointer;
 }
 .about__contain {
   margin-bottom: 10%;
   font-weight: normal;
-  color: purple;
+  color: navy;
 }
 .about__contain__italic {
   font-style: italic;

@@ -156,7 +156,7 @@ a {
 
 .menu__contain li {
   margin-bottom: 2em;
-  color: purple;
+  color: darksalmon;
   font-weight: bolder;
 }
 
