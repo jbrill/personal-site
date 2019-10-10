@@ -7,19 +7,19 @@
       </p>
       <p class="about__contain">
         I specialize in full stack web development, and am currently redefining
-        conversational AI for the world with
+        conversational AI for the world with Clinc
         <a
-          class="about__contain__outbound-link"
+          class="about__contain__footnote"
           target="_blank"
           href="https://clinc.com/"
-          >Clinc</a
+          >[1]</a
         >
       </p>
       <p class="about__contain">
         I plan on obtaining a graduate degree in Human-Computer Interaction in
         the near future to better understand the
         <span class="about__contain__italic">why</span> rather than the
-	<span class="about__contain__italic">how</span><a href="https://knowledge.wharton.upenn.edu/article/constantly-challenging-assumptions-frog-designs-jan-chipchase-has-a-question-for-companies-how-do-you-know-youre-innovative" target="_blank" class="about__contain__footnote">[1]</a>
+	<span class="about__contain__italic">how</span> <a href="https://knowledge.wharton.upenn.edu/article/constantly-challenging-assumptions-frog-designs-jan-chipchase-has-a-question-for-companies-how-do-you-know-youre-innovative" target="_blank" class="about__contain__footnote"> [2]</a>
       </p>
       <p class="about__contain">
         Currently, Los Angeles
@@ -64,6 +64,6 @@ export default {
   font-style: italic;
 }
 .about__contain:hover {
-  opacity: 0.7;
+  color: steelblue;
 }
 </style>
