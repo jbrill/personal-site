@@ -251,7 +251,6 @@ export default {
   );
   background-size: 1800% 1800%;
   background-color: #ffa531;
-  margin-bottom: 20%;
   -webkit-animation: rainbow 60s ease infinite;
   -z-animation: rainbow 60s ease infinite;
   -o-animation: rainbow 60s ease infinite;

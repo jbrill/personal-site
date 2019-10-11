@@ -156,7 +156,7 @@ a {
 
 .menu__contain li {
   margin-bottom: 2em;
-  color: darksalmon;
+  color: silver;
   font-weight: bolder;
 }
 
@@ -199,6 +199,7 @@ a {
   right: 20px;
   bottom: 0;
   min-width: 20%;
+  margin-top: 10vh;
   /* z-index: -10; */
 }
 
