@@ -5,6 +5,7 @@ import About from "./components/About.vue";
 import Home from "./components/Home.vue";
 import Work from "./components/Work.vue";
 import Resume from "./components/Resume.vue";
+import Portfolio from "./components/Portfolio.vue";
 
 import Photos from "./components/photos/Photos.vue";
 import Vietnam from "./components/photos/Vietnam.vue";
@@ -27,6 +28,11 @@ const router = new Router({
       path: "/about",
       name: "about",
       component: About
+    },
+    {
+      path: "/portfolio",
+      name: "portfolio",
+      component: Portfolio
     },
     {
       path: "/work",

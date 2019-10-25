@@ -14,5 +14,6 @@ export default {
 <style>
 html {
   font-family: "Montserrat", sans-serif !important;
+  font-weight: 300;
 }
 </style>

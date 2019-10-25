@@ -19,10 +19,10 @@
         I plan on obtaining a graduate degree in Human-Computer Interaction in
         the near future to better understand the
         <span class="about__contain__italic">why</span> rather than the
-	<span class="about__contain__italic">how</span> <a href="https://knowledge.wharton.upenn.edu/article/constantly-challenging-assumptions-frog-designs-jan-chipchase-has-a-question-for-companies-how-do-you-know-youre-innovative" target="_blank" class="about__contain__footnote"> [2]</a>
+	<span class="about__contain__italic">how </span> <a href="https://knowledge.wharton.upenn.edu/article/constantly-challenging-assumptions-frog-designs-jan-chipchase-has-a-question-for-companies-how-do-you-know-youre-innovative" target="_blank" class="about__contain__footnote"> [2]</a>
       </p>
       <p class="about__contain">
-        Currently, Los Angeles
+        Currently based in Los Feliz, Los Angeles
       </p>
     </Base>
   </div>
@@ -39,14 +39,9 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .about__contain__outbound-link:hover {
   background-color: coral;
-}
-.about__contain__outbound-link {
-  margin-bottom: 10%;
-  font-weight: bolder;
-  color: navy;
 }
 .about__contain__footnote {
   font-size: 30%;
@@ -57,7 +52,7 @@ export default {
 }
 .about__contain {
   margin-bottom: 10%;
-  font-weight: normal;
+  font-weight: 300;
   color: navy;
 }
 .about__contain__italic {
