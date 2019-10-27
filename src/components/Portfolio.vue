@@ -1,11 +1,14 @@
 <template>
   <div>
     <Base>
+      <h2>PORTFOLIO</h2>
       <div class="portfolio__contain">
           NEPTUNE
+            <h6 class="portfolio__medium">CODE + DESIGN</h6>
       </div>
       <div class="portfolio__contain">
-          TECHNOLOGICAL PHOTOJOURNALISM
+           MACHINIST
+	    <h6 class="portfolio__medium">PHOTOGRAPHY</h6>
       </div>
     </Base>
   </div>
@@ -15,7 +18,7 @@
 import Base from "./Base.vue";
 
 export default {
-  name: "About",
+  name: "Portfolio",
   components: {
     Base
   }
@@ -23,30 +26,25 @@ export default {
 </script>
 
 <style>
-.about__contain__outbound-link:hover {
-  background-color: coral;
+h2 {
+  margin-top: 0;
+  margin-bottom: 10vh;
 }
-.about__contain__outbound-link {
-  margin-bottom: 10%;
-  font-weight: bolder;
-  color: navy;
+.portfolio__contain {
+  margin-bottom: 8vh;
+  padding: 2vh;
+  border: 1px solid #F1F1F1;
+  border-left: 2px solid coral;
+  -webkit-box-shadow: 7px 17px 25px -25px rgba(0,0,0,0.39);
+  -moz-box-shadow: 7px 17px 25px -25px rgba(0,0,0,0.39);
+  box-shadow: 7px 17px 25px -25px rgba(0,0,0,0.39);
 }
-.about__contain__footnote {
-  font-size: 30%;
-  margin-top: -5px;
+.portfolio__medium {
+  margin: 0;
+  color: darkgrey;
 }
-.about__contain__footnote:hover {
+.portfolio__contain:hover {
   cursor: pointer;
-}
-.about__contain {
-  margin-bottom: 10%;
-  font-weight: normal;
-  color: navy;
-}
-.about__contain__italic {
-  font-style: italic;
-}
-.about__contain:hover {
-  color: steelblue;
+  margin-left: 5px;
 }
 </style>

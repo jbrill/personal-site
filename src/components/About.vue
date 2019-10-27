@@ -22,7 +22,7 @@
 	<span class="about__contain__italic">how </span> <a href="https://knowledge.wharton.upenn.edu/article/constantly-challenging-assumptions-frog-designs-jan-chipchase-has-a-question-for-companies-how-do-you-know-youre-innovative" target="_blank" class="about__contain__footnote"> [2]</a>
       </p>
       <p class="about__contain">
-        Currently based in Los Feliz, Los Angeles
+        Currently living in Los Feliz, Los Angeles
       </p>
     </Base>
   </div>

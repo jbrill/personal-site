@@ -24,7 +24,6 @@
         <slot></slot>
         <div class="bottom__feed__contain">
           <div class="outbound__contain">
-            //
             <span class="outbound__contain__contact"
               ><a
                 href="https://flickr.com/photos/jlbrill"
@@ -44,7 +43,6 @@
                 >CODE</a
               ></span
             >
-            //
           </div>
           <div class="lower__copyright">
             COPYRIGHT © JASON BRILL

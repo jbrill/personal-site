@@ -35,6 +35,16 @@ const router = new Router({
       component: Portfolio
     },
     {
+      path: "/portfolio/neptune",
+      name: "neptune",
+      component: Portfolio
+    },
+    {
+      path: "/portfolio/techphoto",
+      name: "techphoto",
+      component: Portfolio
+    },
+    {
       path: "/work",
       name: "work",
       component: Work
