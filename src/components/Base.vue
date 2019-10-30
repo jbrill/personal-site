@@ -85,7 +85,7 @@ body {
 
 a {
   text-decoration: none;
-  color: black;
+  color: navy;
 }
 
 #orangeContain {
@@ -166,13 +166,18 @@ a {
   font-weight: 500;
 }
 
-.menu__contain li:hover {
-  cursor: pointer;
-  text-decoration: line-through;
+.menu__contain li a:hover {
+    text-decoration-color: coral;
 }
 
 .menu__contain li a {
   color: navy;
+}
+
+.menu__contain li:hover {
+  cursor: pointer;
+  text-decoration: line-through;
+  text-decoration-color: coral;
 }
 
 .about__contain {

@@ -1,6 +1,7 @@
 <template>
   <div>
     <Base>
+      <h2 style="color: navy; margin-bottom: 0;">ABOUT</h2>
       <p class="about__contain">
         I am an artist and engineer looking to impact the way in which people
         interact with their environments
