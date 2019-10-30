@@ -9,34 +9,39 @@
       <p><i>Professor:</i>&nbsp Isaac Wingfield</p>
       <h4>Prompt</h4>
       <p>The aim of this project is to serve as an opportunity for exploration and discovery within photography, revealing your personal interests and the skills you gain over the semester. On completing this portfolio you should be prepared to move into your own creative practice as a photographer, using photography to accomplish goals you set, appropriately using the methods, tools and techniques available.</p>
-      <p><i>Final Deliverable:</i>&nbsp 20 Photographs and Prints</p>
+      <p><i>Final Deliverable:</i>&nbsp Twenty (20) rolls with contact sheets, twenty (20) finished prints, and a written statement</p>
       <h4>Medium</h4><p>35mm Film 📷</p>
       <h4>Tools</h4>
       <p>Nikon F3 Body</p>
       <p>Ilford HP5 Plus B+W</p>
     <h4>Ideation Process</h4>
     <ul id="ideation--process">
-    <li>Matrix Mapping</li>
+    <li>Mapping</li>
+    <ul id="ideation--process-mapping">
+        <li>Key Words</li>
+        <li>Thinking and Working Process</li>
+        <li>Matrix Map</li>
+        <li>Five-word composite map</li>
+    </ul>
     <li style="margin-bottom: 3vh;">Gathering Inspiration</li>
     <p>After developing key words fom my mapping exercise, I sought inspiration from previous artists. My search consisted of artists recommended from my professor, as well as self-directed research on Man-Altered Landscapes.</p>
       <div class="photography__contain">
         <img src="@/assets/images/portfolio/machinist/inspiration/gohlke.jpg"/>
-        <p>Frank Gohlke - Measure of Emptiness</p>
+        <p>Frank Gohlke - Measure of Emptiness, 1992</p>
         <img src="@/assets/images/portfolio/machinist/inspiration/baltz.jpg"/>
-        <p>Lewis Baltz</p>
+        <p>Lewis Baltz - The New Industrial Parks, 1979</p>
         <img src="@/assets/images/portfolio/machinist/inspiration/sheeler.jpg"/>
-        <p>Charles Sheeler</p>
+        <p>Charles Sheeler - STACKS IN CELEBRATION, 1954</p>
         <img src="@/assets/images/portfolio/machinist/inspiration/burtynsky.jpg"/>
-        <p>Edward Burtynsky</p>
+        <p>Edward Burtynsky - Highway #1, 2003</p>
       </div>
     </ul>
-    <h4>Thesis and Guiding Questions</h4>
+    <h4>Thesis</h4>
       <p>"DISRUPTION" developed my curiosity for human interaction. As a software engineer, I believe it's imperative to dwell on the affect that software has on the developer, and the effect that software has on the world.</p>
       <p>"DISRUPTION" sets out to weigh the tension between technology's utopian intention -- making human lives easier -- with the brutally realist depiction of technology's place in our world.</p>
-    <h4>Process</h4>
     <h4>Artist Statement</h4>
-    <p>This project started out as a fascination with computers and phones on my generation. Screens have a collective affect on state of mind. The human mind responds to its environment… yet this environment changes as we as humans change. I question the meaning of technological innovation. Is our progress as human beings measured by more complexity? Are the objects we, as humans, create natural? As we shape the environment around us, how does this environment affect our own minds?</p>
-    <p>These images span from screens and phones to architecture and nature, and from factories and industry to tourism and medicine. My hope is that some of these images spark a response in the viewer. We, as human beings, create complex forms full of symmetry and patterns, and yet the beauty of nature outmatches these forms. Nonetheless, advances in medicine allow us to live longer; developments in industry instill huge economic progress.
+    <p>"This project started out as a fascination with computers and phones on my generation. Screens have a collective affect on state of mind. The human mind responds to its environment… yet this environment changes as we as humans change. I question the meaning of technological innovation. Is our progress as human beings measured by more complexity? Are the objects we, as humans, create natural? As we shape the environment around us, how does this environment affect our own minds?</p>
+    <p>These images span from screens and phones to architecture and nature, and from factories and industry to tourism and medicine. My hope is that some of these images spark a response in the viewer. We, as human beings, create complex forms full of symmetry and patterns, and yet the beauty of nature outmatches these forms. Nonetheless, advances in medicine allow us to live longer; developments in industry instill huge economic progress."
     </p>
     <h4>Final Product</h4>
       <div class="photography__contain">
@@ -82,7 +87,8 @@
         <p>Beaumont Hospital, Royal Oak, MI</p>
       </div>
       <h4>Reflections</h4>
-      <p>Our economic mobility relies on technological disruption. However, disruption also implies a change in environment, and one that technology's creators may not predict.</p>
+      <p>Our economic mobility relies on technological disruption. Technological disruption is encourage without consideration of environmental consequences.</p>
+      <p>As we continue to innovate, we must remember to look back at how our innovation has served us to better design for the future.</p>
     </Base>
   </div>
 </template>
