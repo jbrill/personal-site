@@ -5,7 +5,7 @@
         <div class="profile__contain">
           <router-link to="/"
             ><div id="orangeContain">
-              <img :src="`${publicPath}avatar.svg`" /></div
+              <img :src="`${publicPath}avatar.png`" /></div
           ></router-link>
           <router-link to="/"
             ><h1 class="title__contain">JASON BRILL</h1></router-link
@@ -13,7 +13,8 @@
         </div>
         <ul class="menu__contain">
           <router-link to="/about" tag="li">WHO AM I</router-link>
-          <!-- <router-link to="/work" tag="li">WORK</router-link> -->
+          <router-link to="/portfolio" tag="li">PORTFOLIO</router-link>
+          <li><a href="mailto:jbrill95@gmail.com">EMAIL</a></li>
 
           <!-- <router-link to="/photography" tag="li">PHOTOGRAPHY</router-link> -->
           <!-- <router-link to="/music" tag="li">MUSIC</router-link> -->
@@ -23,10 +24,6 @@
         <slot></slot>
         <div class="bottom__feed__contain">
           <div class="outbound__contain">
-            <span class="outbound__contain__contact"
-              ><a href="mailto:jbrill95@gmail.com">EMAIL</a></span
-            >
-            //
             <span class="outbound__contain__contact"
               ><a
                 href="https://flickr.com/photos/jlbrill"
@@ -41,9 +38,14 @@
               ></span
             >
             //
+            <span class="outbound__contain__contact"
+              ><a href="https://www.github.com/jbrill/" target="_blank"
+                >CODE</a
+              ></span
+            >
           </div>
           <div class="lower__copyright">
-            MADE WITH ❤️ | COPYRIGHT © JASON BRILL
+            COPYRIGHT © JASON BRILL
           </div>
         </div>
       </div>
@@ -83,7 +85,7 @@ body {
 
 a {
   text-decoration: none;
-  color: black;
+  color: navy;
 }
 
 #orangeContain {
@@ -92,6 +94,10 @@ a {
   width: 40%;
   height: auto;
   background-color: #ffa531;
+}
+
+#orangeContain img {
+  width: 100%;
 }
 
 #orangeContain:hover {
@@ -156,18 +162,27 @@ a {
 
 .menu__contain li {
   margin-bottom: 2em;
-  color: silver;
-  font-weight: bolder;
+  color: navy;
+  font-weight: 500;
+}
+
+.menu__contain li a:hover {
+    text-decoration-color: coral;
+}
+
+.menu__contain li a {
+  color: navy;
 }
 
 .menu__contain li:hover {
   cursor: pointer;
   text-decoration: line-through;
+  text-decoration-color: coral;
 }
 
 .about__contain {
   width: 80%;
-  font-weight: lighter;
+  font-weight: 300;
   margin-bottom: 2rem;
 }
 
