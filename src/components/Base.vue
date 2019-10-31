@@ -5,7 +5,7 @@
         <div class="profile__contain">
           <router-link to="/"
             ><div id="orangeContain">
-              <img :src="`${publicPath}avatar.png`" /></div
+              <img :src="`${publicPath}avatar.jpg`" /></div
           ></router-link>
           <router-link to="/"
             ><h1 class="title__contain">JASON BRILL</h1></router-link
