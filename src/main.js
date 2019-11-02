@@ -3,15 +3,10 @@ import Router from "vue-router";
 import App from "./App.vue";
 import About from "./components/About.vue";
 import Home from "./components/Home.vue";
-import Work from "./components/Work.vue";
-import Resume from "./components/Resume.vue";
 
-import Photos from "./components/photos/Photos.vue";
-import Vietnam from "./components/photos/Vietnam.vue";
-import China from "./components/photos/China.vue";
-import Technology from "./components/photos/Technology.vue";
-import SouthAfrica from "./components/photos/SouthAfrica.vue";
-import Etc from "./components/photos/Etc.vue";
+import Portfolio from "./components/Portfolio.vue";
+import Neptune from "./components/Neptune.vue";
+import Disruption from "./components/Disruption.vue";
 
 Vue.use(Router);
 
@@ -29,45 +24,20 @@ const router = new Router({
       component: About
     },
     {
-      path: "/work",
-      name: "work",
-      component: Work
+      path: "/portfolio",
+      name: "portfolio",
+      component: Portfolio
     },
     {
-      path: "/photography",
-      name: "photography",
-      component: Photos
+      path: "/portfolio/neptune",
+      name: "neptune",
+      component: Neptune
     },
     {
-      path: "/photography/vietnam",
-      name: "vietnam",
-      component: Vietnam
+      path: "/portfolio/disruption",
+      name: "disruption",
+      component: Disruption
     },
-    {
-      path: "/photography/china",
-      name: "china",
-      component: China
-    },
-    {
-      path: "/photography/technology",
-      name: "technology",
-      component: Technology
-    },
-    {
-      path: "/photography/south_africa",
-      name: "south_africa",
-      component: SouthAfrica
-    },
-    {
-      path: "/photography/etc",
-      name: "etc",
-      component: Etc
-    },
-    {
-      path: "/resume",
-      name: "resume",
-      component: Resume
-    }
   ]
 });
 

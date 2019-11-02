@@ -1,4 +1,6 @@
-# personal-site
+# Jason's Personal Site
+
+Built on top of vue-cli
 
 ## Project setup
 ```
