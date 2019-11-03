@@ -2,11 +2,11 @@
   <div>
     <Base>
       <h2 style="color: navy;">PORTFOLIO</h2>
-      <!--<router-link to="/portfolio/neptune" tag="div" class="portfolio__contain">
+      <router-link to="/portfolio/neptune" tag="div" class="portfolio__contain">
           NEPTUNE
           <h6 class="portfolio__medium">FULL-STACK DEVELOPMENT + DESIGN</h6>
           <p>Present</p>
-      </router-link>-->
+      </router-link>
       <router-link to="/portfolio/disruption" tag="div" class="portfolio__contain">
            DISRUPTION
 	    <h6 class="portfolio__medium">PHOTOJOURNALISM</h6>

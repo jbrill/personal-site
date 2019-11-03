@@ -25,7 +25,9 @@
           <li>What do different music applications tackle?</li>
           <li>How might a product address an untapped niche in the market?</li>
       </ul>
+      <a href="https://www.statista.com/statistics/798125/most-popular-us-music-streaming-services-ranked-by-audience/" rel="nofollow"><img src="https://www.statista.com/graphic/1/798125/most-popular-us-music-streaming-services-ranked-by-audience.jpg" alt="Statistic: Most popular music streaming services in the United States as of March 2018, by monthly users (in millions) | Statista" style="width: 100%; height: auto !important; max-width:1000px;-ms-interpolation-mode: bicubic;"/></a>
       <h4>Personas</h4>
+      <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I’m obsessed <a href="https://t.co/xIR7ed7u6u">pic.twitter.com/xIR7ed7u6u</a></p>&mdash; Andrew Clark (@acdlite) <a href="https://twitter.com/acdlite/status/1190874521558867968?ref_src=twsrc%5Etfw">November 3, 2019</a></blockquote> 
       <h4>Current Stack</h4>
         INSERT DIAGRAM HERE
       <h4>Reflections</h4>
