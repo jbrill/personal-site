@@ -50,6 +50,7 @@ export default {
 }
 .about__contain__footnote:hover {
   cursor: pointer;
+  background-color: coral;
 }
 .about__contain {
   margin-bottom: 10%;
