@@ -5,8 +5,8 @@
       <p style="font-style: italic;">Technology’s Grasp: A Photojournalist Perspective</p>
       <h4>Course</h4>
       <p>University of Michigan, Ann Arbor</p>
-      <p><i>Course:</i>&nbsp RCARTS 385, Advanced Photography</p>
-      <p><i>Professor:</i>&nbsp Isaac Wingfield</p>
+      <p><i>Course:</i>&nbsp; RCARTS 385, Advanced Photography</p>
+      <p><i>Professor:</i>&nbsp; Isaac Wingfield</p>
       <h4>Prompt</h4>
       <p>The aim of this project is to serve as an opportunity for exploration and discovery within photography, revealing your personal interests and the skills you gain over the semester. On completing this portfolio you should be prepared to move into your own creative practice as a photographer, using photography to accomplish goals you set, appropriately using the methods, tools and techniques available.</p>
       <p><i>Final Deliverable:</i>&nbsp Twenty (20) rolls with contact sheets, twenty (20) finished prints, and a written statement</p>
@@ -17,6 +17,7 @@
     <h4>Ideation Process</h4>
     <ul id="ideation--process">
     <li>Mapping</li>
+    <p>To begin fleshing our our subject ideas, our class started with a ideative assignment, using techniques from "Mapping the Intelligence of Artistic Work" by Anne West.<a href="https://books.google.com/books/about/Mapping_the_Intelligence_of_Artistic_Wor.html?id=4cOZZwEACAAJ" target="_blank" class="about__contain__footnote"> [1]</a>
     <ul id="ideation--process-mapping">
         <li>Key Words</li>
         <li>Thinking and Working Process</li>
@@ -40,8 +41,8 @@
       <p>"DISRUPTION" developed my curiosity for human interaction. As a software engineer, I believe it's imperative to dwell on the affect that software has on the developer, and the effect that software has on the world.</p>
       <p>"DISRUPTION" sets out to weigh the tension between technology's utopian intention -- making human lives easier -- with the brutally realist depiction of technology's place in our world.</p>
     <h4>Artist Statement</h4>
-    <p>"This project started out as a fascination with computers and phones on my generation. Screens have a collective affect on state of mind. The human mind responds to its environment… yet this environment changes as we as humans change. I question the meaning of technological innovation. Is our progress as human beings measured by more complexity? Are the objects we, as humans, create natural? As we shape the environment around us, how does this environment affect our own minds?</p>
-    <p>These images span from screens and phones to architecture and nature, and from factories and industry to tourism and medicine. My hope is that some of these images spark a response in the viewer. We, as human beings, create complex forms full of symmetry and patterns, and yet the beauty of nature outmatches these forms. Nonetheless, advances in medicine allow us to live longer; developments in industry instill huge economic progress."
+    <p>This project started out as a fascination with computers and phones on my generation. Screens have a collective affect on state of mind. The human mind responds to its environment… yet this environment changes as we as humans change. I question the meaning of technological innovation. Is our progress as human beings measured by more complexity? Are the objects we, as humans, create natural? As we shape the environment around us, how does this environment affect our own minds?</p>
+    <p>These images span from screens and phones to architecture and nature, and from factories and industry to tourism and medicine. My hope is that some of these images spark a response in the viewer. We, as human beings, create complex forms full of symmetry and patterns, and yet the beauty of nature outmatches these forms. Nonetheless, advances in medicine allow us to live longer; developments in industry instill huge economic progress.
     </p>
     <h4>Final Product</h4>
       <div class="photography__contain">
@@ -87,7 +88,7 @@
         <p>Beaumont Hospital, Royal Oak, MI</p>
       </div>
       <h4>Reflections</h4>
-      <p>Our economic mobility relies on technological disruption. Technological disruption is encourage without consideration of environmental consequences.</p>
+      <p>Our economic progress relies on technological disruption. Our personal growth begins with disruption.</p>
       <p>As we continue to innovate, we must remember to look back at how our innovation has served us to better design for the future.</p>
     </Base>
   </div>
@@ -144,5 +145,12 @@ h2 {
 .portfolio__contain:hover {
   cursor: pointer;
   margin-left: 5px;
+}
+.about__contain__footnote:hover {
+  background-color: coral;
+}
+.about__contain__footnote {
+  font-size: 30%;
+  margin-top: -5px;
 }
 </style>

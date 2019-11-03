@@ -7,7 +7,9 @@ import Home from "./components/Home.vue";
 import Portfolio from "./components/Portfolio.vue";
 import Neptune from "./components/Neptune.vue";
 import Disruption from "./components/Disruption.vue";
+import VueLazyload from 'vue-lazyload'
 
+Vue.use(VueLazyload)
 Vue.use(Router);
 
 const router = new Router({
