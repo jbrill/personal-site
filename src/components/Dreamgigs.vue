@@ -62,6 +62,7 @@
           src="https://youtube.com/embed/pti87SpLpWg?controls=0"></iframe>
       <h3>PHASE II: EARLY EVALUATION</h3>
       <h4>Obtaining Feedback from our Prototype</h4>
+      <img width="100%" src="@/assets/images/portfolio/dreamgigs/iterative_model.jpg" />
       <h5>Usability Evalutions</h5>
       <p>I worked closely with a graduate student (who would later take over development of the project) during the usability evaluation stage of our product. We conducted evaluation sessions internal to the School of Information, centered around questionnaires after product walkthroguhs. We gained the following feedback from our participants (n=5):</p>
       <ul style="font-size: smaller">
