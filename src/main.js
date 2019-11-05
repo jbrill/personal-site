@@ -7,6 +7,7 @@ import Home from "./components/Home.vue";
 import Portfolio from "./components/Portfolio.vue";
 import Neptune from "./components/Neptune.vue";
 import Disruption from "./components/Disruption.vue";
+import Dreamgigs from "./components/Dreamgigs.vue";
 
 Vue.use(Router);
 
@@ -37,6 +38,11 @@ const router = new Router({
       path: "/portfolio/disruption",
       name: "disruption",
       component: Disruption
+    },
+    {
+      path: "/portfolio/dreamgigs",
+      name: "dreamgigs",
+      component: Dreamgigs
     },
   ]
 });
