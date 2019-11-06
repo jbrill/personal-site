@@ -17,23 +17,41 @@
     <h4>Ideation Process</h4>
     <ul id="ideation--process">
     <li>Mapping</li>
-    <p>To begin fleshing our our subject ideas, our class started with a ideative assignment, using techniques from "Mapping the Intelligence of Artistic Work" by Anne West.<a href="https://books.google.com/books/about/Mapping_the_Intelligence_of_Artistic_Wor.html?id=4cOZZwEACAAJ" target="_blank" class="about__contain__footnote"> [1]</a>
+    <p>To begin fleshing our our subject ideas, our class started with a ideative assignment, using techniques from "Mapping the Intelligence of Artistic Work" by Anne West.<a href="https://books.google.com/books/about/Mapping_the_Intelligence_of_Artistic_Wor.html?id=4cOZZwEACAAJ" target="_blank" class="about__contain__footnote"> [1]</a></p>
+    <img width="100%" src="@/assets/images/portfolio/disruption/mapping.jpg" />
+    <p>The exercises were highly explorative -- the goal being to bring together a portfolio proposal. During the process, I found new ideas would emerge, and unrelated ideas would start to fall away.</p>
     <ul id="ideation--process-mapping">
-        <li>Key Words</li>
-        <li>Thinking and Working Process</li>
+        <li style="padding-bottom: 2vw">Key Words</li>
+		<p>I started by writing key words I wanted to explore for this semester:</p>
+        <div class="mapping__contain">
+            <canvas width="50vw" height="50vw" id="mapping-canvas"></canvas>
+        <!--    <div><p>AMBIGUITY</p></div>
+            <div><p>SUBLIME</p></div>
+            <div><p>NATURAL</p></div>
+            <div><p>RAW</p></div>
+            <div><p>AVANT-GARDE</p></div>
+            <div><p>EVOLUTION</p></div>
+            <div><p>MATRIX</p></div>
+            <div><p>SPIRITUAL</p></div>
+            <div><p>DUALITY</p></div>
+            <div><p>PERCEPTION</p></div>
+            <div><p>AWARENESS</p></div>
+            <div><p>PRIMITIVISM</p></div>
+            <div><p>STRUCTURE</p></div>-->
+        </div>
         <li>Matrix Map</li>
-        <li>Five-word composite map</li>
+        <li>Five-Word Composite Map</li>
     </ul>
     <li style="margin-bottom: 3vh;">Gathering Inspiration</li>
     <p>After developing key words fom my mapping exercise, I sought inspiration from previous artists. My search consisted of artists recommended from my professor, as well as self-directed research on Man-Altered Landscapes.</p>
       <div class="photography__contain">
-        <img src="@/assets/images/portfolio/machinist/inspiration/gohlke.jpg"/>
+        <img src="@/assets/images/portfolio/disruption/inspiration/gohlke.jpg"/>
         <p>Frank Gohlke - Measure of Emptiness, 1992</p>
-        <img src="@/assets/images/portfolio/machinist/inspiration/baltz.jpg"/>
+        <img src="@/assets/images/portfolio/disruption/inspiration/baltz.jpg"/>
         <p>Lewis Baltz - The New Industrial Parks, 1979</p>
-        <img src="@/assets/images/portfolio/machinist/inspiration/sheeler.jpg"/>
+        <img src="@/assets/images/portfolio/disruption/inspiration/sheeler.jpg"/>
         <p>Charles Sheeler - STACKS IN CELEBRATION, 1954</p>
-        <img src="@/assets/images/portfolio/machinist/inspiration/burtynsky.jpg"/>
+        <img src="@/assets/images/portfolio/disruption/inspiration/burtynsky.jpg"/>
         <p>Edward Burtynsky - Highway #1, 2003</p>
       </div>
     </ul>
@@ -46,45 +64,45 @@
     </p>
     <h4>Final Product</h4>
       <div class="photography__contain">
-        <img src="@/assets/images/portfolio/machinist/final/airport.jpg"/>
+        <img src="@/assets/images/portfolio/disruption/final/airport.jpg"/>
         <p>McNamara Terminal, Detroit, MI</p>
-        <img src="@/assets/images/portfolio/machinist/final/lift.jpg"/>
+        <img src="@/assets/images/portfolio/disruption/final/lift.jpg"/>
         <p>Beaver Creek, CO</p>
-        <img src="@/assets/images/portfolio/machinist/final/steel.jpg"/>
+        <img src="@/assets/images/portfolio/disruption/final/steel.jpg"/>
         <p>Steelstacks, Bethlehem, PA</p>
-        <img src="@/assets/images/portfolio/machinist/final/bridgelift.jpg"/>
+        <img src="@/assets/images/portfolio/disruption/final/bridgelift.jpg"/>
         <p>Brooklyn Bridge, New York City, NY</p>
-        <img src="@/assets/images/portfolio/machinist/final/devices.jpg"/>
+        <img src="@/assets/images/portfolio/disruption/final/devices.jpg"/>
         <p>Ann Arbor, MI</p>
-        <img src="@/assets/images/portfolio/machinist/final/building.jpg"/>
+        <img src="@/assets/images/portfolio/disruption/final/building.jpg"/>
         <p>Wall Street, New York City, NY</p>
-        <img src="@/assets/images/portfolio/machinist/final/nano.jpg"/>
+        <img src="@/assets/images/portfolio/disruption/final/nano.jpg"/>
         <p>Laboratory for Computational Nanoscience and Soft Matter Simulation, Ann Arbor, MI</p>
-        <img src="@/assets/images/portfolio/machinist/final/crane.jpg"/>
+        <img src="@/assets/images/portfolio/disruption/final/crane.jpg"/>
         <p>Bethlehem, PA</p>
-        <img src="@/assets/images/portfolio/machinist/final/duderstadt.jpg"/>
+        <img src="@/assets/images/portfolio/disruption/final/duderstadt.jpg"/>
         <p>Duderstadt Library, Ann Arbor, MI</p>
-        <img src="@/assets/images/portfolio/machinist/final/framedstacks.jpg"/>
+        <img src="@/assets/images/portfolio/disruption/final/framedstacks.jpg"/>
         <p>Steelstacks, Bethlehem, PA</p>
-        <img src="@/assets/images/portfolio/machinist/final/iphone.jpg"/>
+        <img src="@/assets/images/portfolio/disruption/final/iphone.jpg"/>
         <p>Denver, CO</p>
-        <img src="@/assets/images/portfolio/machinist/final/north.jpg"/>
+        <img src="@/assets/images/portfolio/disruption/final/north.jpg"/>
         <p>North Campus, Ann Arbor, MI</p>
-        <img src="@/assets/images/portfolio/machinist/final/puddle.jpg"/>
+        <img src="@/assets/images/portfolio/disruption/final/puddle.jpg"/>
         <p>North Campus, Ann Arbor, MI</p>
-        <img src="@/assets/images/portfolio/machinist/final/pipes.jpg"/>
+        <img src="@/assets/images/portfolio/disruption/final/pipes.jpg"/>
         <p>Brooklyn Bridge, New York City, NY</p>
-        <img src="@/assets/images/portfolio/machinist/final/solar.jpg"/>
+        <img src="@/assets/images/portfolio/disruption/final/solar.jpg"/>
         <p>North Campus, Ann Arbor, MI</p>
-        <img src="@/assets/images/portfolio/machinist/final/train.jpg"/>
+        <img src="@/assets/images/portfolio/disruption/final/train.jpg"/>
         <p>Steelstacks, Bethlehem, PA</p>
-        <img src="@/assets/images/portfolio/machinist/final/wallstreet.jpg"/>
+        <img src="@/assets/images/portfolio/disruption/final/wallstreet.jpg"/>
         <p>Wall Street, New York City, NY</p>
-        <img src="@/assets/images/portfolio/machinist/final/dam.jpg"/>
+        <img src="@/assets/images/portfolio/disruption/final/dam.jpg"/>
         <p>Gross Reservoir, Near Boulder, CO</p>
-        <img src="@/assets/images/portfolio/machinist/final/brooklynbridge.jpg"/>
+        <img src="@/assets/images/portfolio/disruption/final/brooklynbridge.jpg"/>
         <p>Brooklyn Bridge, New York City, NY</p>
-        <img src="@/assets/images/portfolio/machinist/final/hospital.jpg"/>
+        <img src="@/assets/images/portfolio/disruption/final/hospital.jpg"/>
         <p>Beaumont Hospital, Royal Oak, MI</p>
       </div>
       <h4>Reflections</h4>
@@ -97,10 +115,87 @@
 <script>
 import Base from "./Base.vue";
 
+function roundRect(ctx, x, y, width, height, radius, fill, stroke) {
+  if (typeof stroke == "undefined" ) {
+    stroke = true;
+  }
+  if (typeof radius === "undefined") {
+    radius = 5;
+  }
+  ctx.beginPath();
+  ctx.moveTo(x + radius, y);
+  ctx.lineTo(x + width - radius, y);
+  ctx.quadraticCurveTo(x + width, y, x + width, y + radius);
+  ctx.lineTo(x + width, y + height - radius);
+  ctx.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);
+  ctx.lineTo(x + radius, y + height);
+  ctx.quadraticCurveTo(x, y + height, x, y + height - radius);
+  ctx.lineTo(x, y + radius);
+  ctx.quadraticCurveTo(x, y, x + radius, y);
+  ctx.closePath();
+  if (stroke) {
+    ctx.stroke();
+  }
+  if (fill) {
+    ctx.fill();
+  }        
+}
+
 export default {
   name: "Disruption",
   components: {
     Base
+  },
+    /*
+  data() {
+      return {
+        mappings: [
+          { name: "Structure", height: calcHeight
+          "Primitivism",
+          "Awareness",
+          "Perception",
+          "Duality",
+          "Spiritual",
+          "Matrix",
+          "Evolution",
+          "Ambiguity",
+          "Avant-garde",
+          "Natural",
+          "Raw",
+          "Sublime"
+        ]
+      }
+  }*/
+  methods: {
+    updateCanvas: function (){
+		var canvas = document.getElementById('mapping-canvas'), ctx = canvas.getContext('2d');
+		canvas.width = window.innerWidth;     // equals window dimension
+		canvas.height = window.innerHeight;
+		ctx.clearRect(0,0,canvas.width,canvas.height);
+		ctx.lineWidth = 4;
+		ctx.strokeStyle = "black";
+		ctx.fillStyle = "coral";
+		
+		const rectHeight = 200;
+		const rectWidth = rectHeight;
+
+		roundRect(ctx, 10, 10, rectWidth, rectHeight, 5, true);
+		ctx.font="100% Helvetica";
+		ctx.textAlign="center"; 
+		ctx.textBaseline = "middle";
+		ctx.fillStyle = "black";
+		var rectX = 10;
+		var rectY = 10;
+		ctx.fillText("Disruption",rectX+(rectWidth/2),rectY+(rectHeight/2));
+    }
+  },
+  watch: {
+    exampleContent: function(val, oldVal) {
+      this.updateCanvas();
+    }
+  },
+  mounted: function (){
+    this.updateCanvas();
   }
 };
 </script>
@@ -113,14 +208,47 @@ export default {
   cursor: pointer;
   opacity: 0.7;
 }
+.photography__contain img {
+  width: 100%;
+  height: auto;
+}
 .photography__contain p {
   font-size: small;
   text-align: right;
   margin-bottom: 3vh;
   color: darkgrey;
 }
-.photography__contain img {
+.photography__contain {
+  height: 100%;
+}
+.mapping__contain {
+  height: 50vw;
+}
+.mapping__contain canvas {
   width: 100%;
+  height: 100%;
+}
+.mapping__contain div:hover {
+  cursor: pointer;
+  background-color: pink;
+}
+.mapping__contain div {
+  background: deeppink;
+  width: 10vw;
+  height: 10vw;
+  border: 1px solid slategrey;
+  position: absolute;
+  -webkit-box-shadow: 1vw 2vw 3w -3vw rgba(0,0,0,0.39);
+  -moz-box-shadow: 1vw 2vw 3vw -5vw rgba(0,0,0,0.39);
+  box-shadow: 1vw 3vw 5vw -5vw rgba(0,0,0,0.2);
+}
+.mapping__contain div p {
+  font-size: 50%;
+  font-weight: 600;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  text-align: center;
+  margin-top: 40%;
 }
 p {
   font-size: smaller;
