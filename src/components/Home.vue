@@ -3,7 +3,7 @@
     <Base>
       <!-- Based off https://codepen.io/franky/pen/LGMWPK -->
 
-      <canvas ref="canvas" class="canvas__contain"></canvas>
+      <canvas @click="handleRoute" ref="canvas" class="canvas__contain"></canvas>
     </Base>
   </div>
 </template>
@@ -20,6 +20,11 @@ export default {
     return {
       connections: []
     };
+  },
+  methods: {
+    handleRoute() {
+       this.$router.push('/portfolio')
+    }
   },
   mounted() {
     var ParticleNetworkAnimation, PNA;

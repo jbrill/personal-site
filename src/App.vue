@@ -11,6 +11,10 @@ export default {
   methods: {
     photoClick(event) {
       if (event.target.tagName === 'IMG') {
+        console.log(event);
+        if (event.target.currentSrc.includes('avatar')) {
+          return;
+        }
         window.open(event.srcElement.currentSrc, '_blank');
       }
     },
