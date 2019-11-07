@@ -20,7 +20,7 @@
         I plan on obtaining a graduate degree in Human-Computer Interaction in
         the near future to better understand the
         <span class="about__contain__italic">why</span> rather than the
-	<span class="about__contain__italic">how </span> <a href="https://knowledge.wharton.upenn.edu/article/constantly-challenging-assumptions-frog-designs-jan-chipchase-has-a-question-for-companies-how-do-you-know-youre-innovative" target="_blank" class="about__contain__footnote"> [2]</a>. I believe intent is imperative when building tools, and my intention is to build a healthy and sustainable future.
+	<span class="about__contain__italic">how </span> <a href="https://knowledge.wharton.upenn.edu/article/constantly-challenging-assumptions-frog-designs-jan-chipchase-has-a-question-for-companies-how-do-you-know-youre-innovative" target="_blank" class="about__contain__footnote"> [2]</a>. As a software engineer, I've been focused on mastering the how behind product development. I believe the "why" will drive how I shape products, and ultimately influence how users consume them. Intent is imperative when building tools, and my intention is to build a healthy and sustainable future.
       </p>
     </Base>
   </div>

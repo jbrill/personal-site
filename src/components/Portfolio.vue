@@ -7,15 +7,15 @@
           <h6 class="portfolio__medium">FULL-STACK DEVELOPMENT + DESIGN</h6>
           <p>Present</p>
       </router-link>-->
-      <router-link to="/portfolio/disruption" tag="div" class="portfolio__contain">
-           DISRUPTION
-	    <h6 class="portfolio__medium">PHOTOJOURNALISM</h6>
-        <p>Fall 2017</p>
-      </router-link>
       <router-link to="/portfolio/dreamgigs" tag="div" class="portfolio__contain">
            DREAMGIGS
 	    <h6 class="portfolio__medium">USER RESEARCH + RAPID APPLICATION DEVELOPMENT</h6>
         <p>Summer, Fall 2018</p>
+      </router-link>
+      <router-link to="/portfolio/disruption" tag="div" class="portfolio__contain">
+           DISRUPTION
+	    <h6 class="portfolio__medium">PHOTOJOURNALISM</h6>
+        <p>Fall 2017</p>
       </router-link>
     </Base>
   </div>

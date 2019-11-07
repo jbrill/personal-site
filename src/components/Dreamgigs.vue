@@ -3,6 +3,11 @@
     <Base>
       <h2 style="margin: 0; color: navy;">DREAMGIGS</h2>
       <p style="font-style: italic;">Helping Job Seekers Obtain the Career Skills to Reach their Dream Job</p>
+      <iframe 
+          frameborder="0"
+          allowfullscreen 
+          style="width:100%;height:100%;margin-bottom:5vh;"
+          src="https://youtube.com/embed/pti87SpLpWg?controls=0"></iframe>
       <h4>Introduction</h4>
       <p>DreamGigs was the primary project I worked on during my time with Social Innovations Group (<a href="http://socialinnovations.us/" target="_blank">SIG</a>). My work with the group spanned from June 2017 to December 2018.</p>
       <p>Upon initially meeting with Dr. Tawanna Dillahunt, we discussed her prior work surrounding technological barriers in developing social and cultural capital, particularly in economically distressed areas. Her previous research,  "Analyzing Employment Technologies for Economically Distressed Individuals" <a href="http://www.tawannadillahunt.com/wp-content/uploads/2014/03/wip0476-jenSC.pdf" target="_blank" class="about__contain__footnote"> [1]</a> and "Designing for Disadvantaged Job Seekers: Insights from Early Investigations" <a href="http://www.tawannadillahunt.com/wp-content/uploads/2016/04/DesigningforJobSeekersv9-final.pdf" target="_blank" class="about__contain__footnote"> [2]</a>, touch on how popular job-seeker platforms like LinkedIn, TaskRabbit, and Indeed benefit users with an already existing and strong network, rather than job-seekers without a strong network looking to build career-related skills.</p> 
@@ -54,12 +59,6 @@
       <p>Our product was hosted on a Linux machine on Digital Ocean. We were running Flask atop of Gunicorn HTTP server with Continuous Integration and Deployment linked to our Github repository.</p>
       <h4>Final Product</h4>
       <p>The codebase can be seen <a href="https://github.com/jbrill/Dreamgigs-Skillscraper/" target="_blank">here</a>.</p>
-      <h5>Video Demo</h5>
-      <iframe 
-          frameborder="0"
-          allowfullscreen 
-          style="width:100%;height:100%;margin-bottom:5vh;"
-          src="https://youtube.com/embed/pti87SpLpWg?controls=0"></iframe>
       <h3>PHASE II: EARLY EVALUATION</h3>
       <h4>Obtaining Feedback from our Prototype</h4>
       <h5>Usability Evalutions</h5>

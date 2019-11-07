@@ -3,11 +3,11 @@
     <div class="content__contain">
       <div class="content__contain__left">
         <div class="profile__contain">
-          <router-link to="/"
+          <router-link to="/vis"
             ><div id="orangeContain">
               <img :src="`${publicPath}avatar.jpg`" /></div
           ></router-link>
-          <router-link to="/"
+          <router-link to="/about"
             ><h1 class="title__contain">JASON BRILL</h1></router-link
           >
         </div>
