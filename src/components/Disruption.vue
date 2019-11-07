@@ -1,7 +1,7 @@
 <template>
   <div>
     <Base>
-      <h2 style="margin: 0;">DISRUPTION</h2>
+      <h2 style="margin: 0; color: navy;">DISRUPTION</h2>
       <p style="font-style: italic;">Technology’s Grasp: A Photojournalist Perspective</p>
       <h4>Course</h4>
       <p>University of Michigan, Ann Arbor</p>
@@ -16,31 +16,51 @@
       <p>Ilford HP5 Plus B+W</p>
     <h4>Ideation Process</h4>
     <ul id="ideation--process">
-    <li>Mapping</li>
+    <li>Keyword Mapping</li>
     <p>To begin fleshing our our subject ideas, our class started with a ideative assignment, using techniques from "Mapping the Intelligence of Artistic Work" by Anne West.<a href="https://books.google.com/books/about/Mapping_the_Intelligence_of_Artistic_Wor.html?id=4cOZZwEACAAJ" target="_blank" class="about__contain__footnote"> [1]</a></p>
     <img width="100%" src="@/assets/images/portfolio/disruption/mapping.jpg" />
     <p>The exercises were highly explorative -- the goal being to bring together a portfolio proposal. During the process, I found new ideas would emerge, and unrelated ideas would start to fall away.</p>
     <ul id="ideation--process-mapping">
-        <li style="padding-bottom: 2vw">Key Words</li>
-		<p>I started by writing key words I wanted to explore for this semester:</p>
-        <div class="mapping__contain">
-            <canvas width="50vw" height="50vw" id="mapping-canvas"></canvas>
-        <!--    <div><p>AMBIGUITY</p></div>
-            <div><p>SUBLIME</p></div>
-            <div><p>NATURAL</p></div>
-            <div><p>RAW</p></div>
-            <div><p>AVANT-GARDE</p></div>
-            <div><p>EVOLUTION</p></div>
-            <div><p>MATRIX</p></div>
-            <div><p>SPIRITUAL</p></div>
-            <div><p>DUALITY</p></div>
-            <div><p>PERCEPTION</p></div>
-            <div><p>AWARENESS</p></div>
-            <div><p>PRIMITIVISM</p></div>
-            <div><p>STRUCTURE</p></div>-->
-        </div>
+        <li>Key Words</li>
+		<p>Dr. West notes, "Key words hold the scent of our work. They are the word base for our writing, allowing us to build upon them as we generate open word maps.". I began the semester by jotting down ideas I find relevant to my proposal:</p>
+        <img width="100%" src="@/assets/images/portfolio/disruption/key_words.jpg" />
         <li>Matrix Map</li>
+        <p>This technique is used by a wide range of artists. Dr. West mentions a ceramist, Lee Johnson, who "is eager to find lines between his works and to discover a framework for how he has been thinking .This system of mapping allows him to work with information that is not only pertinent to now, but which is part of an overall journey, lasting a number of years. By containing it on one surface, he sees the resources at hand, and establishes a more synthetic perspective.":</p>
+        <p>I mapped connections that I could decipher from within my list of words. This step was key to building non-linear connections between sets of words. The three lines, green, red, and blue, represented three broad topics -- vision, religion, and art.</p>
+        <img width="100%" src="@/assets/images/portfolio/disruption/key_words_mapping.jpg" />
         <li>Five-Word Composite Map</li>
+        <p>I then took the five words I found most significant from the previous exercise, and wrote down words I associate with them.</p>
+        <table style="width:100%; font-size: small; padding-bottom: 2vh;">
+	  <tr>
+		<th>SPIRITUAL</th>
+		<td>Inner-Self</td>
+		<td>Introspection</td>
+		<td>Epiphany</td>
+	  </tr>
+	  <tr>
+		<th>AWARENESS</th>
+		<td>Growth</td>
+		<td>Lighting</td>
+		<td>Understanding</td>
+	  </tr>
+	  <tr>
+		<th>PERCEPTION</th>
+		<td>Wisdom</td>
+		<td>Space</td>
+		<td>Cerebral</td>
+	  </tr>
+	  <tr>
+		<th>NATURAL</th>
+		<td>Evolutionary</td>
+		<td>Growth</td>
+	  </tr>
+	  <tr>
+		<th>SUBLIME</th>
+		<td>God</td>
+		<td>Superhuman</td>
+		<td>Surreal</td>
+	  </tr>
+	</table>
     </ul>
     <li style="margin-bottom: 3vh;">Gathering Inspiration</li>
     <p>After developing key words fom my mapping exercise, I sought inspiration from previous artists. My search consisted of artists recommended from my professor, as well as self-directed research on Man-Altered Landscapes.</p>
@@ -55,6 +75,9 @@
         <p>Edward Burtynsky - Highway #1, 2003</p>
       </div>
     </ul>
+    <h4>Photographic Process</h4>
+    <p>My photographic process was both technically and compositionally iterative.</p>
+    <p>As I was developing my own film, as well as creating prints in a darkroom, I foudn that process to be relevant to the work as a whole. Developing film requires agitation, or disruption, and directly contributed to the nature of the work.</p>
     <h4>Thesis</h4>
       <p>"DISRUPTION" developed my curiosity for human interaction. As a software engineer, I believe it's imperative to dwell on the affect that software has on the developer, and the effect that software has on the world.</p>
       <p>"DISRUPTION" sets out to weigh the tension between technology's utopian intention -- making human lives easier -- with the brutally realist depiction of technology's place in our world.</p>
@@ -115,94 +138,22 @@
 <script>
 import Base from "./Base.vue";
 
-function roundRect(ctx, x, y, width, height, radius, fill, stroke) {
-  if (typeof stroke == "undefined" ) {
-    stroke = true;
-  }
-  if (typeof radius === "undefined") {
-    radius = 5;
-  }
-  ctx.beginPath();
-  ctx.moveTo(x + radius, y);
-  ctx.lineTo(x + width - radius, y);
-  ctx.quadraticCurveTo(x + width, y, x + width, y + radius);
-  ctx.lineTo(x + width, y + height - radius);
-  ctx.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);
-  ctx.lineTo(x + radius, y + height);
-  ctx.quadraticCurveTo(x, y + height, x, y + height - radius);
-  ctx.lineTo(x, y + radius);
-  ctx.quadraticCurveTo(x, y, x + radius, y);
-  ctx.closePath();
-  if (stroke) {
-    ctx.stroke();
-  }
-  if (fill) {
-    ctx.fill();
-  }        
-}
-
 export default {
   name: "Disruption",
   components: {
     Base
   },
-    /*
-  data() {
-      return {
-        mappings: [
-          { name: "Structure", height: calcHeight
-          "Primitivism",
-          "Awareness",
-          "Perception",
-          "Duality",
-          "Spiritual",
-          "Matrix",
-          "Evolution",
-          "Ambiguity",
-          "Avant-garde",
-          "Natural",
-          "Raw",
-          "Sublime"
-        ]
-      }
-  }*/
-  methods: {
-    updateCanvas: function (){
-		var canvas = document.getElementById('mapping-canvas'), ctx = canvas.getContext('2d');
-		canvas.width = window.innerWidth;     // equals window dimension
-		canvas.height = window.innerHeight;
-		ctx.clearRect(0,0,canvas.width,canvas.height);
-		ctx.lineWidth = 4;
-		ctx.strokeStyle = "black";
-		ctx.fillStyle = "coral";
-		
-		const rectHeight = 200;
-		const rectWidth = rectHeight;
-
-		roundRect(ctx, 10, 10, rectWidth, rectHeight, 5, true);
-		ctx.font="100% Helvetica";
-		ctx.textAlign="center"; 
-		ctx.textBaseline = "middle";
-		ctx.fillStyle = "black";
-		var rectX = 10;
-		var rectY = 10;
-		ctx.fillText("Disruption",rectX+(rectWidth/2),rectY+(rectHeight/2));
-    }
-  },
-  watch: {
-    exampleContent: function(val, oldVal) {
-      this.updateCanvas();
-    }
-  },
-  mounted: function (){
-    this.updateCanvas();
-  }
 };
 </script>
 
 <style scoped>
 #ideation--process {
   list-style-type: lower-roman;
+}
+#ideation--process ul li {
+  font-weight: 500;
+  padding-top: 2vw;
+  list-style-type: none;
 }
 .photography__contain img:hover {
   cursor: pointer;
@@ -220,35 +171,6 @@ export default {
 }
 .photography__contain {
   height: 100%;
-}
-.mapping__contain {
-  height: 50vw;
-}
-.mapping__contain canvas {
-  width: 100%;
-  height: 100%;
-}
-.mapping__contain div:hover {
-  cursor: pointer;
-  background-color: pink;
-}
-.mapping__contain div {
-  background: deeppink;
-  width: 10vw;
-  height: 10vw;
-  border: 1px solid slategrey;
-  position: absolute;
-  -webkit-box-shadow: 1vw 2vw 3w -3vw rgba(0,0,0,0.39);
-  -moz-box-shadow: 1vw 2vw 3vw -5vw rgba(0,0,0,0.39);
-  box-shadow: 1vw 3vw 5vw -5vw rgba(0,0,0,0.2);
-}
-.mapping__contain div p {
-  font-size: 50%;
-  font-weight: 600;
-  overflow: hidden !important;
-  text-overflow: ellipsis;
-  text-align: center;
-  margin-top: 40%;
 }
 p {
   font-size: smaller;
