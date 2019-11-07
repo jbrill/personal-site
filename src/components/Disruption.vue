@@ -10,9 +10,8 @@
       <h4>Prompt</h4>
       <p>The aim of this project is to serve as an opportunity for exploration and discovery within photography, revealing your personal interests and the skills you gain over the semester. On completing this portfolio you should be prepared to move into your own creative practice as a photographer, using photography to accomplish goals you set, appropriately using the methods, tools and techniques available.</p>
       <p><i>Final Deliverable:</i>&nbsp Twenty (20) rolls with contact sheets, twenty (20) finished prints, and a written statement</p>
-      <h4>Medium</h4><p>35mm Film 📷</p>
       <h4>Tools</h4>
-      <p>Nikon F3 Body</p>
+      <p>Nikon F3 📷</p>
       <p>Ilford HP5 Plus B+W</p>
     <h4>Ideation Process</h4>
     <ul id="ideation--process">
