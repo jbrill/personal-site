@@ -8,6 +8,7 @@ import Portfolio from "./components/Portfolio.vue";
 import Neptune from "./components/Neptune.vue";
 import Disruption from "./components/Disruption.vue";
 import Dreamgigs from "./components/Dreamgigs.vue";
+import MusicAndCulture from "./components/MusicAndCulture.vue";
 
 Vue.use(Router);
 
@@ -38,6 +39,11 @@ const router = new Router({
       path: "/portfolio/neptune",
       name: "neptune",
       component: Neptune
+    },
+    {
+      path: "/portfolio/music_and_culture",
+      name: "music_and_culture",
+      component: MusicAndCulture
     },
     {
       path: "/portfolio/disruption",

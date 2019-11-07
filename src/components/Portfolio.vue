@@ -17,6 +17,11 @@
 	    <h6 class="portfolio__medium">PHOTOJOURNALISM</h6>
         <p>Fall 2017</p>
       </router-link>
+      <router-link to="/portfolio/music_and_culture" tag="div" class="portfolio__contain">
+           MUSIC AND CULTURE
+	    <h6 class="portfolio__medium">DOCUMENTARY</h6>
+        <p>Spring 2014</p>
+      </router-link>
     </Base>
   </div>
 </template>
