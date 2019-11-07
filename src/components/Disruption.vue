@@ -3,6 +3,7 @@
     <Base>
       <h2 style="margin: 0; color: navy;">DISRUPTION</h2>
       <p style="font-style: italic;">Technology’s Grasp: A Photojournalist Perspective</p>
+      <a data-flickr-embed="true" href="https://www.flickr.com/photos/jlbrill/albums/72157664456826527" title="Disruption"><img src="https://live.staticflickr.com/4777/25811401327_cf73f2b955_z.jpg" width="100%" alt="Disruption"></a>
       <h4>Course</h4>
       <p>University of Michigan, Ann Arbor</p>
       <p><i>Course:</i>&nbsp; RCARTS 385, Advanced Photography</p>
