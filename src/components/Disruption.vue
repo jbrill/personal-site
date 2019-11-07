@@ -77,7 +77,7 @@
     </ul>
     <h4>Photographic Process</h4>
     <p>My photographic process was both technically and compositionally iterative.</p>
-    <p>As I was developing my own film, as well as creating prints in a darkroom, I foudn that process to be relevant to the work as a whole. Developing film requires agitation, or disruption, and directly contributed to the nature of the work.</p>
+    <p>As I was developing my own film and prints in a darkroom, I realized that the process of development itself was incredibly relevant impactful to my work. Developing film requires "disruption" (agitation) in order for the chemical process to occur.</p>
     <h4>Thesis</h4>
       <p>"DISRUPTION" developed my curiosity for human interaction. As a software engineer, I believe it's imperative to dwell on the affect that software has on the developer, and the effect that software has on the world.</p>
       <p>"DISRUPTION" sets out to weigh the tension between technology's utopian intention -- making human lives easier -- with the brutally realist depiction of technology's place in our world.</p>
@@ -131,6 +131,7 @@
       <h4>Reflections</h4>
       <p>Our economic progress relies on technological disruption. Our personal growth begins with disruption.</p>
       <p>As we continue to innovate, we must remember to look back at how our innovation has served us to better design for the future.</p>
+      <p>This project pushed my creative process. Since this course, I've been continuing to take photos as a hobby.</p>
     </Base>
   </div>
 </template>
