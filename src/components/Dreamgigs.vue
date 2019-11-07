@@ -1,7 +1,7 @@
 <template>
   <div>
     <Base>
-      <h2 style="margin: 0;">DREAMGIGS</h2>
+      <h2 style="margin: 0; color: navy;">DREAMGIGS</h2>
       <p style="font-style: italic;">Helping Job Seekers Obtain the Career Skills to Reach their Dream Job</p>
       <h4>Introduction</h4>
       <p>DreamGigs was the primary project I worked on during my time with Social Innovations Group (<a href="http://socialinnovations.us/" target="_blank">SIG</a>). My work with the group spanned from June 2017 to December 2018.</p>
