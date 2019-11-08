@@ -38,6 +38,9 @@ p, h1, h2, h3, h4, h5, h6, li {
 p {
   font-size: 1rem;
 }
+p:hover {
+  color: steelblue;
+  }
 img:hover {
   cursor: pointer;
   opacity: 0.75;
