@@ -14,7 +14,7 @@
       </router-link>-->
       <router-link to="/portfolio/dreamgigs" tag="div" class="portfolio__contain">
         <div class="portfolio__contain-img">
-          <img src="@/assets/images/portfolio/dreamgigs/architecture.jpg"/>
+          <img @click.stop src="@/assets/images/portfolio/dreamgigs/architecture.jpg"/>
         </div>
         <div class="portfolio__contain-text">
           <h4>DREAMGIGS</h4>
@@ -24,7 +24,7 @@
       </router-link>
       <router-link to="/portfolio/disruption" tag="div" class="portfolio__contain">
         <div class="portfolio__contain-img">
-          <img style="margin-top:-125px"src="@/assets/images/portfolio/disruption/final/iphone.jpg"/>
+          <img @click.stop style="margin-top:-125px"src="@/assets/images/portfolio/disruption/final/iphone.jpg"/>
         </div>
         <div class="portfolio__contain-text">
           <h4>DISRUPTION</h4>
@@ -34,7 +34,7 @@
       </router-link>
       <router-link to="/portfolio/genre_mixer" tag="div" class="portfolio__contain">
         <div class="portfolio__contain-img">
-          <img src="@/assets/images/portfolio/genremixer/project.png"/>
+          <img @click.stop src="@/assets/images/portfolio/genremixer/project.png"/>
         </div>
         <div class="portfolio__contain-text">
           <h4>GENRE MIXER</h4>
@@ -44,7 +44,7 @@
       </router-link>
       <router-link to="/portfolio/music_and_culture" tag="div" class="portfolio__contain">
         <div class="portfolio__contain-img">
-          <img style="margin-top: -125px"src="@/assets/images/portfolio/musicandculture/snippet.png"/>
+          <img style="margin-top: -125px" @click.stop src="@/assets/images/portfolio/musicandculture/snippet.png"/>
         </div>
         <div class="portfolio__contain-text">
           <h4>MUSIC + CULTURE</h4>
@@ -63,6 +63,16 @@ export default {
   name: "Portfolio",
   components: {
     Base
+  },
+  methods: {
+    blockClick(event) {
+      if (event.target.tagName === 'IMG') {
+        console.log("YO");
+      }
+    }
+  },
+  mounted() {
+    document.addEventListener('click', this.blockClick);
   }
 };
 </script>

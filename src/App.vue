@@ -11,7 +11,6 @@ export default {
   methods: {
     photoClick(event) {
       if (event.target.tagName === 'IMG') {
-        console.log(event);
         if (event.target.currentSrc.includes('avatar')) {
           return;
         }
