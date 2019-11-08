@@ -1,7 +1,7 @@
 <template>
   <div>
     <Base>
-      <h2 style="margin: 0; color: navy;">DREAMGIGS</h2>
+      <h2 style="margin: 0;">DREAMGIGS</h2>
       <p style="font-style: italic;">Helping Job Seekers Obtain the Career Skills to Reach their Dream Job</p>
       <iframe 
           frameborder="0"
