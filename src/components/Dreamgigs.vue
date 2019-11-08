@@ -6,7 +6,8 @@
       <iframe 
           frameborder="0"
           allowfullscreen 
-          style="width:100%;height:100%;margin-bottom:5vh;"
+          width="560"
+          height="315"
           src="https://youtube.com/embed/pti87SpLpWg?controls=0"></iframe>
       <h4>Introduction</h4>
       <p>DreamGigs was the primary project I worked on during my time with Social Innovations Group (<a href="http://socialinnovations.us/" target="_blank">SIG</a>). My work with the group spanned from June 2017 to December 2018.</p>
@@ -25,15 +26,17 @@
       <h4>Designing the Tool</h4>
       <h6>Sketching a User Flow</h6>
       <p>Our sketching sessions occured during weekly SIG meeting, where the group (consisting of a mesh of undergraduate, graduate, and post-docs) and I would whiteboard and iteratively alter potential user flows:</p>
-      <img width="100%" src="@/assets/images/portfolio/dreamgigs/sketch1.jpg" />
-      <img width="100%" src="@/assets/images/portfolio/dreamgigs/sketch2.jpg" />
+      <div>
+      <img width="50%" src="@/assets/images/portfolio/dreamgigs/sketch1.jpg" />
+      <img width="50%" src="@/assets/images/portfolio/dreamgigs/sketch2.jpg" />
+      </div>
       <h6>Building an Initial Prototype</h6>
       <p>Based off our user flow sketches, I set out out to create an initial <a href="https://projects.invisionapp.com/d/main#/projects/prototypes/11735762" target="_blank">prototype hosted on InVision</a> [using Sketch for design].</p>
       <h6>Conducting Pilot Testing</h6>
       <p>Duration: 30 minutes</p>
       <p>Materials: Laptop (Screen Recorded)</p>
-      <p>Breakdown:</p>
-      <ul style="font-size: smaller">
+      <h6>Time Breakdown</h6>
+      <ul style="list-style-type: none;font-size: smaller; padding: 0;">
           <li>Setup (3-5 min)</li>
           <li>Warmup (5 min)</li>
           <li>Prototype Walkthrough (5 min)</li>
@@ -44,14 +47,14 @@
       <p>After pilot testing the prototype, we iterated to come up with high-fideltiy wireframes before beginning development. You can view the mockups <a href="https://projects.invisionapp.com/d/main#/projects/prototypes/11735762" target="_blank">here</a>.</p>
       <h4>Developing the Tool</h4>
       <p>Before development, I met with Dr. Walter Lasecki to brainstorm the technical architecture and the AI techinques needed:</p>
-      <img width="100%" src="@/assets/images/portfolio/dreamgigs/architecture.jpg"/>
+      <img width="70%" src="@/assets/images/portfolio/dreamgigs/architecture.jpg"/>
       <h5>Development of Skillscraper</h5>
       <p>We needed a tool to map what skills a job-seeker would need to transition from their current job to a new job. We were able to use DataAtWork, a lightweight API, in order to generate the subset of skills needed to move from one job to the next.</p>
       <h5>Development of Classifier (Craigslist Postings -> O-NET Categories)</h5>
       <p>Our initial choice of a job-posting site was Craigslist. In order to classify these job-postings, we needed to obtain training data. We found O-NET, a publically accessible database, supplied tons of data correlating job titles with related skills. By leveraging this data with Sklearn's Cross Validation module, I was able to create a model with roughly an 80% prediction success rate. We could now feed the model any job-related text, and get back the relevant job title.</p>
       <h5>Development of Gig-Retriever (Skills -> Craigslist Postings)</h5>
       <p>The next step in my development workflow was to create the gig-retriever. After obtaining the subset of skills needed to obtain a dream job, as well as a classifier to map Craigslist gigs to jop titles, we were almost ready for the full user flow. However, we needed a reverse-classifier to map our skills to our Craigslist postings:</p>
-      <img src="@/assets/images/portfolio/dreamgigs/skillscraper.png" />
+      <img width="70%" src="@/assets/images/portfolio/dreamgigs/skillscraper.png" />
       <p>Note: The number to the right of the gig was the "significance metric" provided by DataAtWork. We sent DataAtWork our Career Title supplied by our classifier, and got back a significance metric signifying the importance of the specified skill to that career title.</p>
       <h5>Development of Front-End</h5>
       <p>The front-end was relatively straightforward. The project was a multi-page app, populating our pages with data from our Flask backend, and handling User Interaction with JQuery. We served the templates with our Flask routing, and used material design for UI elements and icons.</p>
@@ -63,7 +66,7 @@
       <h4>Obtaining Feedback from our Prototype</h4>
       <h5>Usability Evalutions</h5>
       <p>I worked closely with a graduate student (who would later take over development of the project) during the usability evaluation stage of our product. We conducted evaluation sessions internal to the School of Information, centered around questionnaires after product walkthroguhs. We gained the following feedback from our participants (n=5):</p>
-      <ul style="font-size: smaller">
+      <ul style="padding: 0; list-style-type: none;font-size: 1rem">
           <li>Alignment of gigs and identified skills:</li> <p>All of our participants (n = 5) expressed that the gigs from Craiglist are unprofessional and irrelevant to their job.</p>
           <li>Variety of gigs:</li> <p>Four out of five participants (n = 4) highlighted that the volunteer opportunities should be included in the gigs.</p>
           <li>Ease of use:</li> <p>In the evaluation sessions, all participants (n = 5) found DreamGigs prototype easy and straightforward to use. Three out of five participants (n = 5) pointed out the prototype should provide more instructions and clarifications to the users.</p>
@@ -88,8 +91,11 @@ export default {
 </script>
 
 <style scoped>
+* {
+  text-align: center;
+}
 p {
-  font-size: smaller;
+  font-size: 1rem;
 }
 .about__contain__footnote {
   font-size: 30%;

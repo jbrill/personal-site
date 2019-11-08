@@ -1,7 +1,7 @@
 <template>
   <div>
     <Base>
-      <h2 style="margin: 0; color: navy;">DISRUPTION</h2>
+      <h2 style="margin: 0;">DISRUPTION</h2>
       <p style="font-style: italic;">Technology’s Grasp: A Photojournalist Perspective</p>
       <a data-flickr-embed="true" href="https://www.flickr.com/photos/jlbrill/albums/72157664456826527" title="Disruption"><img src="https://live.staticflickr.com/4777/25811401327_cf73f2b955_z.jpg" width="100%" alt="Disruption"></a>
       <h4>Course</h4>
@@ -16,7 +16,6 @@
       <p>Ilford HP5 Plus B+W</p>
     <h4>Ideation Process</h4>
     <ul id="ideation--process">
-    <li>Keyword Mapping</li>
     <p>To begin fleshing our our subject ideas, our class started with a ideative assignment, using techniques from "Mapping the Intelligence of Artistic Work" by Anne West.<a href="https://books.google.com/books/about/Mapping_the_Intelligence_of_Artistic_Wor.html?id=4cOZZwEACAAJ" target="_blank" class="about__contain__footnote"> [1]</a></p>
     <img width="100%" src="@/assets/images/portfolio/disruption/mapping.jpg" />
     <p>The exercises were highly explorative -- the goal being to bring together a portfolio proposal. During the process, I found new ideas would emerge, and unrelated ideas would start to fall away.</p>
@@ -148,12 +147,17 @@ export default {
 </script>
 
 <style scoped>
+* {
+  text-align: center;
+}
 #ideation--process {
-  list-style-type: lower-roman;
+  list-style-type: none;
+  padding: 0;
 }
 #ideation--process ul li {
   font-weight: 500;
   padding-top: 2vw;
+  font-size: smaller;
   list-style-type: none;
 }
 .photography__contain img:hover {
@@ -165,16 +169,13 @@ export default {
   height: auto;
 }
 .photography__contain p {
-  font-size: small;
+  font-size: 1rem;
   text-align: right;
   margin-bottom: 3vh;
   color: darkgrey;
 }
 .photography__contain {
   height: 100%;
-}
-p {
-  font-size: smaller;
 }
 h2 {
   margin-top: 0;

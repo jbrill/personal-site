@@ -1,7 +1,7 @@
 <template>
   <div>
     <Base>
-      <h2 style="margin: 0; color: navy;">MUSIC AND CULTURE</h2>
+      <h2 style="margin: 0;">MUSIC AND CULTURE</h2>
       <p style="font-style: italic;">A documentary centered on the relationship between music and culture.</p>
       <iframe src="https://player.vimeo.com/video/97366907" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
       <p><a href="https://vimeo.com/97366907">Music and Culture</a> from <a href="https://vimeo.com/fcit">FCS</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
@@ -23,6 +23,9 @@ export default {
 </script>
 
 <style scoped>
+* {
+  text-align: center;
+}
 p {
   font-size: smaller;
 }

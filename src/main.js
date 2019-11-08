@@ -9,6 +9,7 @@ import Neptune from "./components/Neptune.vue";
 import Disruption from "./components/Disruption.vue";
 import Dreamgigs from "./components/Dreamgigs.vue";
 import MusicAndCulture from "./components/MusicAndCulture.vue";
+import GenreMixer from "./components/GenreMixer.vue";
 
 Vue.use(Router);
 
@@ -54,6 +55,11 @@ const router = new Router({
       path: "/portfolio/dreamgigs",
       name: "dreamgigs",
       component: Dreamgigs
+    },
+    {
+      path: "/portfolio/genre_mixer",
+      name: "genre_mixer",
+      component: GenreMixer
     },
   ]
 });

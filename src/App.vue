@@ -33,9 +33,24 @@ html {
   font-family: "Montserrat", sans-serif !important;
   font-weight: 300;
 }
-
+p, h1, h2, h3, h4, h5, h6, li {
+  color: #505050;
+}
+p {
+  font-size: 1rem;
+}
 img:hover {
   cursor: pointer;
   opacity: 0.75;
+}
+.content__contain__right {
+  text-align: center;
+  margin: 0 auto;
+}
+a {
+  color: navy;
+}
+a:hover {
+  background-color: coral;
 }
 </style>
