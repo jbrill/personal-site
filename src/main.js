@@ -10,6 +10,7 @@ import Disruption from "./components/Disruption.vue";
 import Dreamgigs from "./components/Dreamgigs.vue";
 import MusicAndCulture from "./components/MusicAndCulture.vue";
 import GenreMixer from "./components/GenreMixer.vue";
+import Clinc from "./components/Clinc.vue";
 
 Vue.use(Router);
 
@@ -60,6 +61,11 @@ const router = new Router({
       path: "/portfolio/genre_mixer",
       name: "genre_mixer",
       component: GenreMixer
+    },
+    {
+      path: "/portfolio/clinc",
+      name: "clinc",
+      component: Clinc
     },
   ]
 });
