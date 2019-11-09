@@ -10,6 +10,7 @@
   "dependencies": {
     "core-js": "^2.6.5",
     "vue": "^2.6.10",
+    "vue-json-viewer": "^2.2.8",
     "vue-lazyload": "^1.3.3",
     "vue-rss-feed": "^0.2.4"
   },

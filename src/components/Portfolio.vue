@@ -24,7 +24,7 @@
       </router-link>
       <router-link to="/portfolio/disruption" tag="div" class="portfolio__contain">
         <div class="portfolio__contain-img">
-          <img @click.stop style="margin-top:-125px"src="@/assets/images/portfolio/disruption/final/iphone.jpg"/>
+          <img @click.stop style=""src="@/assets/images/portfolio/disruption/final/iphone.jpg"/>
         </div>
         <div class="portfolio__contain-text">
           <h4>DISRUPTION</h4>
@@ -44,7 +44,7 @@
       </router-link>
       <router-link to="/portfolio/music_and_culture" tag="div" class="portfolio__contain">
         <div class="portfolio__contain-img">
-          <img style="margin-top: -125px" @click.stop src="@/assets/images/portfolio/musicandculture/snippet.png"/>
+          <img style="" @click.stop src="@/assets/images/portfolio/musicandculture/snippet.png"/>
         </div>
         <div class="portfolio__contain-text">
           <h4>MUSIC + CULTURE</h4>
@@ -89,22 +89,26 @@ h2 {
   margin-bottom: 8vh;
   border: 1px solid #F1F1F1;
   border-left: 2px solid navy;
-  height: 25vw;
   -webkit-box-shadow: 7px 17px 25px -25px rgba(0,0,0,0.39);
   -moz-box-shadow: 7px 17px 25px -25px rgba(0,0,0,0.39);
   box-shadow: 7px 17px 25px -25px rgba(0,0,0,0.39);
 }
+.portfolio__contain-img img:hover {
+  opacity: 1;
+  cursor: default;
+}
 .portfolio__contain-img img {
   width: 100%;
+  border-bottom: 2px solid coral;
 }
 .portfolio__contain-img{
-  border-bottom: 2px solid coral;
   height: 50%;
   overflow: hidden;
 }
 .portfolio__contain-text {
   padding-top: 2vw;
   padding-left: 2vw;
+  padding-bottom: 2vw;
 }
 .portfolio__contain-text h4 {
   margin: 0;

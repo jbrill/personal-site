@@ -56,6 +56,7 @@ export default {
   width: 100%;
   margin-left: 0;
   margin-right: 0;
+  font-size: 1.2rem;
 }
 .about__contain__italic {
   font-style: italic;

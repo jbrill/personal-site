@@ -9,6 +9,7 @@
           width="560"
           height="315"
           src="https://youtube.com/embed/pti87SpLpWg?controls=0"></iframe>
+      <img style="margin-top: 2vw" width="100%" src="@/assets/images/portfolio/dreamgigs/alex.jpg" />
       <h4>Introduction</h4>
       <p>DreamGigs was the primary project I worked on during my time with Social Innovations Group (<a href="http://socialinnovations.us/" target="_blank">SIG</a>). My work with the group spanned from June 2017 to December 2018.</p>
       <p>Upon initially meeting with Dr. Tawanna Dillahunt, we discussed her prior work surrounding technological barriers in developing social and cultural capital, particularly in economically distressed areas. Her previous research,  "Analyzing Employment Technologies for Economically Distressed Individuals" <a href="http://www.tawannadillahunt.com/wp-content/uploads/2014/03/wip0476-jenSC.pdf" target="_blank" class="about__contain__footnote"> [1]</a> and "Designing for Disadvantaged Job Seekers: Insights from Early Investigations" <a href="http://www.tawannadillahunt.com/wp-content/uploads/2016/04/DesigningforJobSeekersv9-final.pdf" target="_blank" class="about__contain__footnote"> [2]</a>, touch on how popular job-seeker platforms like LinkedIn, TaskRabbit, and Indeed benefit users with an already existing and strong network, rather than job-seekers without a strong network looking to build career-related skills.</p> 
