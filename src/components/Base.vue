@@ -324,6 +324,9 @@ a {
     padding-left: 0;
     text-align: right;
   }
+  .menu__contain li {
+    text-align: right;
+  }
   .content__contain__right {
     width: 100%;
     height: 100%;
