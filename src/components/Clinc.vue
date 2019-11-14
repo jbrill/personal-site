@@ -38,12 +38,13 @@
       <img width="100%" src="@/assets/images/portfolio/clinc/before.png" />
       <p style="font-size: small; font-weight: 100">User Management page before.</p>
       <h6 style="font-weight: 100">SPRINT #1</h6>
-      <img style="font-size: small" src="@/assets/images/portfolio/clinc/gif2.gif" /><p style="font-size: small">Revamped User Management page.</p>
-      <img src="@/assets/images/portfolio/clinc/gif1.gif" /><p style="font-size: small">Institution Management page.</p>
+      <img style="font-size: small" width="100%" src="@/assets/images/portfolio/clinc/gif2.gif" /><p style="font-size: small">Revamped User Management page.</p>
+      <img width="100%" src="@/assets/images/portfolio/clinc/gif1.gif" /><p style="font-size: small">Institution Management page.</p>
       <p>View the feature in its entirety <a href="https://www.youtube.com/embed/MT7NfmbBMg0" target="_blank">here</a>.</p>
       <h4>REFLECTIONS AND FUTURE WORK</h4>
       <p>As I'm currently training to become a Solutions Architect, I'm hoping to incorporate design principles into our product development workflow.</p>
       <p>I will have the unique opportunity to interact with our clients throughout the deployment and development lifecycles. The UX space surrounding building conversational agents is essentailly untouched. I hope to help contribute and build frameworks for evaluating conversations, as well as the technology that empowers them.</p>
+      <p>I'm hoping to pursue a graduate program in design and HCI next year in order to further my design skill set, and gain the appropriate knowledge to fulfill my dream of bringing UX to clients.</p>
     </Base>
   </div>
 </template>

@@ -14,10 +14,7 @@
         <ul class="menu__contain">
           <router-link to="/about" tag="li">WHO AM I</router-link>
           <router-link to="/portfolio" tag="li">PORTFOLIO</router-link>
-          <li><a href="mailto:jbrill95@gmail.com">EMAIL</a></li>
-
-          <!-- <router-link to="/photography" tag="li">PHOTOGRAPHY</router-link> -->
-          <!-- <router-link to="/music" tag="li">MUSIC</router-link> -->
+          <li><a class="email" href="mailto:jbrill95@gmail.com">EMAIL</a></li>
         </ul>
       </div>
       <div class="content__contain__right">
@@ -336,5 +333,8 @@ a {
   .bottom__feed__contain {
     position: relative;
   }
+}
+.email:hover {
+  background-color: white;
 }
 </style>
