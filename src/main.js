@@ -3,6 +3,7 @@ import Router from "vue-router";
 import App from "./App.vue";
 import About from "./components/About.vue";
 import Home from "./components/Home.vue";
+import Resume from "./components/Resume.vue";
 
 import Portfolio from "./components/Portfolio.vue";
 import Neptune from "./components/Neptune.vue";
@@ -66,6 +67,11 @@ const router = new Router({
       path: "/portfolio/clinc",
       name: "clinc",
       component: Clinc
+    },
+    {
+      path: "/resume",
+      name: "resume",
+      component: Resume
     },
   ]
 });
