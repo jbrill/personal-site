@@ -7,6 +7,16 @@
           <h6 class="portfolio__medium">FULL-STACK DEVELOPMENT + DESIGN</h6>
           <p>Present</p>
       </router-link>-->
+      <router-link to="/portfolio/music_and_culture" tag="div" class="portfolio__contain">
+        <div class="portfolio__contain-img">
+          <img style="" @click.stop src="@/assets/images/portfolio/musicandculture/snippet.png"/>
+        </div>
+        <div class="portfolio__contain-text">
+          <h4>7 in 7</h4>
+  	      <h6 class="portfolio__medium">VARIOUS MEDIUMS</h6>
+          <p>Fall 2020</p>
+        </div>
+      </router-link>
       <router-link to="/portfolio/clinc" tag="div" class="portfolio__contain">
         <div class="portfolio__contain-img">
 <!--          <svg style="background-color: black;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 192">
@@ -37,7 +47,7 @@
       </router-link>
       <router-link to="/portfolio/disruption" tag="div" class="portfolio__contain">
         <div class="portfolio__contain-img">
-          <img @click.stop style=""src="@/assets/images/portfolio/disruption/final/iphone.jpg"/>
+          <img @click.stop style="" src="@/assets/images/portfolio/disruption/final/iphone.jpg"/>
         </div>
         <div class="portfolio__contain-text">
           <h4>DISRUPTION</h4>
@@ -78,11 +88,6 @@ export default {
     Base
   },
   methods: {
-    blockClick(event) {
-      if (event.target.tagName === 'IMG') {
-        console.log("YO");
-      }
-    }
   },
   mounted() {
     document.addEventListener('click', this.blockClick);

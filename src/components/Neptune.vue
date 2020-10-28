@@ -31,7 +31,7 @@
       <h4>Reflections</h4>
        
       <h4>Future Work</h4>
-    </Base>
+    </ Base>
   </div>
 </template>
 

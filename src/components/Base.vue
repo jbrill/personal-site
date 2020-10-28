@@ -3,13 +3,7 @@
     <div class="content__contain">
       <div class="content__contain__left">
         <div class="profile__contain">
-          <router-link to="/vis"
-            ><div id="orangeContain">
-              <img :src="`${publicPath}avatar.jpg`" /></div
-          ></router-link>
-          <router-link to="/about"
-            ><h1 class="title__contain">JASON BRILL</h1></router-link
-          >
+          <h1 class="title__contain">JASON BRILL</h1>
         </div>
         <ul class="menu__contain">
           <router-link to="/about" tag="li">WHO AM I</router-link>
@@ -89,7 +83,7 @@ a {
   top: 0;
   right: 0;
   width: 40%;
-  height: auto;
+  height: 2vh;
   background-color: #ffa531;
 }
 

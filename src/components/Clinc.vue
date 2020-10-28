@@ -1,13 +1,12 @@
 <template>
   <div>
-    <Base>
       <h2 style="margin: 0;">CLINC</h2>
       <p style="font-style: italic;">Redefining Conversation AI for Enterprise.</p>
       <h4>ABOUT</h4>
       <p><a href="https://clinc.com" target="_blank">Clinc</a> is a state-based conversational AI platform, fueled by deep-learning techniques and a contextual, top down approach to dialog management.</p>
       <img width="70%" src="@/assets/images/portfolio/clinc/clinc.png" />
       <p style="font-size: small; font-weight: 100">Clinc's State Graph builder page.</p>
-      <h4>PAST WORK</h4>
+      <h4 class="headline">PROJECT 1</h4>
       <p>Upon graduation, I began working at Clinc as a Platform Engineer. For several months, I worked on the core platform, where our core users -- typically developers and conversational designers from a variety of verticals (Financial / Automotive / Gaming / Healthcare) -- build and tweak their Artificial Intelligence projects.</p>
       <p> As our UI is browser-based, I began working on our responsive web application, comprised of a set of open-source frameworks including Vue for the front-end, Express for serving our routes, Selenium for our test suites, and Django for our backend API.</p>
       <p>Fast-forward one year, and our stack has changed significantly, as well as my responsibilites at Clinc. I transitioned to an Infrastructure Engineer, where I'd broaded my platform development expertise to include the dev-ops skills needed to develop self-sufficient microservices. Soon after, deployed our stack in customer environments, eventually helping to form a new internal team, Infrastructure Customer Solutions Engineering (CSE). This team is focused on working with customers to architect end-to-end solutions, integrate backend features, and deploy the platform into customer environments, as well as implementing the internal tooling required for repeatable success.</p>
@@ -21,12 +20,10 @@
       <h6 style="font-weight: 100">SPRINT #2</h6>
       <div>
           <img width="70%" src="@/assets/images/portfolio/clinc/1.png" /><br>
-          <img @click.stop width="50vw" src="@/assets/arrow_downward-24px.svg" /><br>
           <img width="70%" src="@/assets/images/portfolio/clinc/2.png" /><br>
-          <img @click.stop width="50vw" src="@/assets/arrow_downward-24px.svg" /><br>
           <img width="70%" src="@/assets/images/portfolio/clinc/3.png" /><br>
       </div>
-      <h4>PRESENT WORK</h4>
+      <h4 class="headline">PROJECT 2</h4>
       <h5>INSTITUTION API</h5>
       <h6>PROBLEM</h6>
       <p>In Clinc’s legacy code, Institutions’ metadata (highly abstracted users) was being loaded via statically lived Json fixture files. In Clinc’s legacy code, Institutions’ metadata (highly abstracted users) was being loaded via statically lived <a href="https://code.djangoproject.com/wiki/Fixtures" target="_blank">json fixture files</a>. One of the imperative Infrastructure goals was to modify our stack to be more nimble and easily deployable. To do this, we needed to transition our Institution Deployment model to be more dynamic.</p>
@@ -45,7 +42,6 @@
       <p>As I'm currently training to become a Solutions Architect, I'm hoping to incorporate design principles into our product development workflow.</p>
       <p>I will have the unique opportunity to interact with our clients throughout the deployment and development lifecycles. The UX space surrounding building conversational agents is essentailly untouched. I hope to help contribute and build frameworks for evaluating conversations, as well as the technology that empowers them.</p>
       <p>I'm hoping to pursue a graduate program in design and HCI next year in order to further my design skill set, and gain the appropriate knowledge to fulfill my dream of bringing UX to clients.</p>
-    </Base>
   </div>
 </template>
 
@@ -61,9 +57,6 @@ export default {
 </script>
 
 <style scoped>
-* {
-  text-align: center;
-}
 p {
   font-size: smaller;
 }

@@ -1,11 +1,7 @@
 <template>
-  <div>
-    <Base>
-      <!-- Based off https://codepen.io/franky/pen/LGMWPK -->
+  <!-- Based off https://codepen.io/franky/pen/LGMWPK -->
 
-      <canvas @click="handleRoute" ref="canvas" class="canvas__contain"></canvas>
-    </Base>
-  </div>
+  <canvas @click="handleRoute" ref="canvas" class="canvas__contain"></canvas>
 </template>
 
 <script>
