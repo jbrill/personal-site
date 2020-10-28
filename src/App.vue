@@ -15,7 +15,7 @@
                 I’m a software engineer, product designer, and entrepeneur currently pursuing an MFA in Design & Technology at the Parsons School of Design.
               </span>
             </v-container>
-            <v-container style="padding-right: 2rem">
+            <v-container>
               <v-btn icon href="https://twitter.com/jbrill_" target="_blank" class="outbound-link">
                 <v-icon>mdi-twitter</v-icon>
               </v-btn>

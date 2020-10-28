@@ -1,7 +1,7 @@
 <template>
   <div>
       <h2 style="margin: 0;">CLINC</h2>
-      <p style="font-style: italic;">Redefining Conversation AI for Enterprise.</p>
+      <p class="description-1 ">Redefining Conversation AI for Enterprise.</p>
       <h4>ABOUT</h4>
       <p><a href="https://clinc.com" target="_blank">Clinc</a> is a state-based conversational AI platform, fueled by deep-learning techniques and a contextual, top down approach to dialog management.</p>
       <img width="70%" src="@/assets/images/portfolio/clinc/clinc.png" />
@@ -35,8 +35,8 @@
       <img width="100%" src="@/assets/images/portfolio/clinc/before.png" />
       <p style="font-size: small; font-weight: 100">User Management page before.</p>
       <h6 style="font-weight: 100">SPRINT #1</h6>
-      <img style="font-size: small" width="100%" src="@/assets/images/portfolio/clinc/gif2.gif" /><p style="font-size: small">Revamped User Management page.</p>
-      <img width="100%" src="@/assets/images/portfolio/clinc/gif1.gif" /><p style="font-size: small">Institution Management page.</p>
+      <img style="font-size: small" width="100%" src="@/assets/images/portfolio/clinc/gif2.gif" /><p style="font-size: small; font-weight: 100">Revamped User Management page.</p>
+      <img width="100%" src="@/assets/images/portfolio/clinc/gif1.gif" /><p style="font-size: small; font-weight: 100">Institution Management page.</p>
       <p>View the feature in its entirety <a href="https://www.youtube.com/embed/MT7NfmbBMg0" target="_blank">here</a>.</p>
       <h4>REFLECTIONS AND FUTURE WORK</h4>
       <p>As I'm currently training to become a Solutions Architect, I'm hoping to incorporate design principles into our product development workflow.</p>
@@ -46,24 +46,14 @@
 </template>
 
 <script>
-import Base from "./Base.vue";
-
 export default {
   name: "MusicAndCulture",
   components: {
-    Base
   }
 };
 </script>
 
 <style scoped>
-p {
-  font-size: smaller;
-}
-.about__contain__footnote {
-  font-size: 30%;
-  margin-top: -5px;
-}
 .about__contain__footnote:hover {
   background-color: coral;
 }

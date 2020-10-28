@@ -42,14 +42,12 @@
 </template>
 
 <script>
-import Base from "./Base.vue";
 import JsonViewer from 'vue-json-viewer'
 
 export default {
   name: "MusicAndCulture",
   components: {
-    Base,
-	JsonViewer
+    JsonViewer,
   },
   data() {
     return {

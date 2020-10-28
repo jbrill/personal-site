@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h2 style="margin: 0;">DREAMGIGS</h2>
-    <p style="font-style: italic;">Helping Job Seekers Obtain the Career Skills to Reach their Dream Job</p>
+    <h2 class="title-1">DREAMGIGS</h2>
+    <p class="description">Helping Job Seekers Obtain the Career Skills to Reach their Dream Job</p>
     <iframe 
         frameborder="0"
         allowfullscreen 
@@ -9,7 +9,7 @@
         height="315"
         src="https://youtube.com/embed/pti87SpLpWg?controls=0"></iframe>
     <img style="margin-top: 2vw" width="100%" src="@/assets/images/portfolio/dreamgigs/alex.jpg" />
-    <h4>Introduction</h4>
+    <h4 class="heading-2">Introduction</h4>
     <p>DreamGigs was the primary project I worked on during my time with Social Innovations Group (<a href="http://socialinnovations.us/" target="_blank">SIG</a>). My work with the group spanned from June 2017 to December 2018.</p>
     <p>Upon initially meeting with Dr. Tawanna Dillahunt, we discussed her prior work surrounding technological barriers in developing social and cultural capital, particularly in economically distressed areas. Her previous research,  "Analyzing Employment Technologies for Economically Distressed Individuals" <a href="http://www.tawannadillahunt.com/wp-content/uploads/2014/03/wip0476-jenSC.pdf" target="_blank" class="about__contain__footnote"> [1]</a> and "Designing for Disadvantaged Job Seekers: Insights from Early Investigations" <a href="http://www.tawannadillahunt.com/wp-content/uploads/2016/04/DesigningforJobSeekersv9-final.pdf" target="_blank" class="about__contain__footnote"> [2]</a>, touch on how popular job-seeker platforms like LinkedIn, TaskRabbit, and Indeed benefit users with an already existing and strong network, rather than job-seekers without a strong network looking to build career-related skills.</p> 
     <p>This was the problem we aimed to solve -- populations without strong social and cultural capital lack the ability to transition to new career paths, having no indication of what skills they need to build to change paths. DreamGigs aims to provide a gig-services platform, in which a user’s intended career path corresponds to nearby gigs, which all build skills needed for that ideal career.</p>
@@ -86,10 +86,7 @@ export default {
 };
 </script>
 
-<style scoped>
-p {
-  font-size: 1rem;
-}
+<style scoped>s
 .about__contain__footnote {
   font-size: 30%;
   margin-top: -5px;
