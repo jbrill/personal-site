@@ -3,7 +3,7 @@
      <v-main>
 
       <!-- Provides the application the proper gutter -->
-      <v-container fluid>
+      <v-container>
         <v-layout flex justify-space-between>
           <v-container class="content__contain__left">
             <v-container>
@@ -70,9 +70,11 @@
                 </router-link>
               </v-col>
             </v-row>
-            <router-view></router-view>
           </v-container>
         </v-layout>
+        <v-container>
+          <router-view></router-view>
+        </v-container>
       </v-container>
     </v-main>
 
