@@ -12,22 +12,24 @@
             </v-container>
             <v-container>
               <span class="body-2">
-                I’m a software engineer, product designer, and entrepeneur currently pursuing an MFA in Design & Technology at the Parsons School of Design.
+                I’m a software engineer and product designer currently pursuing an MFA in <a href="https://www.newschool.edu/parsons/mfa-design-technology/" target="_blank">Design & Technology</a> at the Parsons School of Design.
               </span>
             </v-container>
             <v-container>
-              <v-btn icon href="https://twitter.com/jbrill_" target="_blank" class="outbound-link">
-                <v-icon>mdi-twitter</v-icon>
-              </v-btn>
-              <v-btn icon href="https://linkedin.com/in/jlbrill" target="_blank" class="outbound-link">
-                <v-icon>mdi-linkedin</v-icon>
-              </v-btn>
-              <v-btn icon href="https://github.com/jbrill" target="_blank" class="outbound-link">
-                <v-icon>mdi-github</v-icon>
-              </v-btn>
-              <v-btn icon href="mailto:jbrill95@gmail.com" target="_blank" class="outbound-link">
-                <v-icon>mdi-email</v-icon>
-              </v-btn>
+              <span class="body-2">
+                My interests lie in the exploration between the physical world and the digital. My recent projects explore how community-driven information affects values and perception, how interfaces can influence music listening habits, and how to cultivate healthier relationships between people and the tools that they use.
+              </span>
+            </v-container>
+            <v-container>
+              <span class="body-2">
+                Elsewhere, you can catch me on <a href="https://github.com/jbrill" target="_blank">Github</a>, <a href="https://linkedin.com/in/jlbrill" target="_blank">LinkedIn</a>, <a href="https://soundcloud.com/brillay" target="_blank">Soundcloud</a>, or <a href="https://twitter.com/jbrill_" target="_blank">Twitter</a>.
+                Check out my resume <a href="https://drive.google.com/file/d/1hLJvyhbiLcL-jB-BnPVV6Rey2ECQ2LHr/view?usp=sharing" target="_blank">here</a>.
+              </span>
+            </v-container>
+            <v-container>
+              <span class="body-2">
+                Let's connect! Reach out to me at [jbrill95 at gmail dot com].
+              </span>
             </v-container>
           </v-container>
           <v-container class="right-contain">
@@ -184,7 +186,7 @@ body {
   -webkit-transition: opacity 0.3s ease-out;
   -o-transition: opacity 0.3s ease-out;
 }
-.outbound-link {
-  padding-right: 2rem;
+a {
+  color: orangered !important;
 }
 </style>
