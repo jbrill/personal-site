@@ -37,43 +37,40 @@
             <v-row>
               <v-col md="4" v-for="(card, index) in cards" :key="index" >
                 <router-link :to="card.to" tag="a" style="text-decoration: none;" class="portfolio__contain">
-                  <v-hover v-slot="{ hover }">
-                    <v-card>
-                      <v-img
-                        style="background-color:black"
-                        class="white--text align-end mx-auto"
-                        :src="'require(' + card.src + ')'"
+                    <v-card hover>
+                      <v-card-title
+                        class="
+                          headline
+                        "
                       >
-                      <v-expand-transition>
-                        <v-card-title v-if="hover"
-                          class="d-flex transition-fast-in-fast-out darken-2 v-card--reveal display-1 white--text">{{ card.title.toUpperCase() }}
-                        </v-card-title>
-                      </v-expand-transition>
-                        
-                      </v-img>
-                  
-                      <v-card-subtitle class="pb-0">
                         {{ card.title.toUpperCase() }}
+                      </v-card-title>
+                      <v-card-subtitle class="pb-0">
+                        {{ card.description }}
                       </v-card-subtitle>
                   
                       <v-card-text class="text--primary">
-                        <div>{{ card.skills }}</div>
-                  
-                        <div>{{ card.description }}</div>
-                      </v-card-text>
-                  
-                      <v-card-actions>
+                        <v-chip-group column>
+                          <v-chip x-small label outlined v-for="(skill, skillIdx) in card.skills" :key="'skill' + skillIdx">{{ skill }}</v-chip>
+                        </v-chip-group>
                         <span class="overline">{{ card.date }}</span>
-                      </v-card-actions>
+                      </v-card-text>
                     </v-card>
-                  </v-hover>
                 </router-link>
               </v-col>
             </v-row>
           </v-container>
         </v-layout>
         <v-container>
-          <router-view></router-view>
+          <transition
+            name="fade"
+            mode="out-in"
+            @beforeLeave="beforeLeave"
+            @enter="enter"
+            @afterEnter="afterEnter"
+          >
+            <router-view/>
+          </transition>
         </v-container>
       </v-container>
     </v-main>
@@ -94,18 +91,19 @@ export default {
   },
   data () {
     return {
+      prevHeight: 0,
       cards: [
         {
           'title': '7-in-7',
-          'skills': 'MIXED',
+          'skills': ['PROTOTYPING', 'FULL-STACK ENGINEERING', 'PHOTOGRAPHY'],
           'to': '7-in-7',
           'src': '@/assets/images/portfolio/clinc/clinc_intro.png',
           'description': 'Creating 7 projects in 7 days for Major Studio 1 at Parsons.',
-          'date': 'Fall 2020'
+          'date': 'Fall 2020',
         },
         {
           'title': 'Clinc',
-          'skills': 'PRODUCT ENGINEERING + INFRATRUCTURE',
+          'skills': ['PRODUCT DESIGN', 'BACK-END DEVELOPMENT', 'FRONT-END DEVELOPMENT'],
           'to': 'clinc',
           'src': '@/assets/images/portfolio/clinc/clinc_intro.png',
           'description': 'Selected projects from my work as an engineer at Clinc, a conversational AI startup.',
@@ -113,25 +111,25 @@ export default {
         },
         {
           'title': 'Dreamgigs',
-          'skills': 'USER RESEARCH + RAPID APPLICATION DEVELOPMENT',
+          'skills': ['USER RESEARCH', 'RAPID APPLICATION DEVELOPMENT'],
           'to': 'dreamgigs',
-          'src': '@/assets/images/portfolio/clinc/clinc_intro.png',
+          'src': 'images/portfolio/clinc/clinc_intro.png',
           'description': 'Prototyping and engineering work for the HCI department at the University of Michigan.',
           'date': 'Summer, Fall 2018'
         },
         {
           'title': 'Disruption',
-          'skills': 'PHOTOJOURNALISM',
+          'skills': ['PHOTOJOURNALISM'],
           'to': 'disruption',
-          'src': '@/assets/images/portfolio/clinc/clinc_intro.png',
+          'src': 'images/portfolio/clinc/clinc_intro.png',
           'description': 'Photojournalist exploration of the relationship between man and machine, 35mm.',
           'date': 'Fall 2017'
         },
         {
           'title': 'Genre Mixer',
-          'skills': 'ALGORITHMIC COMPOSITION',
+          'skills': ['ALGORITHMIC COMPOSITION'],
           'to': 'genre-mixer',
-          'src': '@/assets/images/portfolio/clinc/clinc_intro.png',
+          'src': 'images/portfolio/clinc/clinc_intro.png',
           'description': 'Experimental max/msp patch and web application.',
           'date': 'Fall 2016'
         },
@@ -146,6 +144,21 @@ export default {
         }
         window.open(event.srcElement.currentSrc, '_blank');
       }
+    },
+    beforeLeave(element) {
+      this.prevHeight = getComputedStyle(element).height;
+    },
+    enter(element) {
+      const { height } = getComputedStyle(element);
+
+      element.style.height = this.prevHeight;
+
+      setTimeout(() => {
+        element.style.height = height;
+      });
+    },
+    afterEnter(element) {
+      element.style.height = 'auto';
     },
   },
   mounted() {
@@ -190,5 +203,17 @@ body {
 }
 a {
   color: orangered !important;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition-duration: 0.3s;
+  transition-property: height, opacity;
+  transition-timing-function: ease;
+  overflow: hidden;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0
 }
 </style>

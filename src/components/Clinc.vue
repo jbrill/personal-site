@@ -1,9 +1,9 @@
 <template>
   <div>
-      <h2 style="margin: 0;">CLINC</h2>
-      <p class="description-1 ">Redefining Conversation AI for Enterprise.</p>
-      <h4>ABOUT</h4>
-      <p><a href="https://clinc.com" target="_blank">Clinc</a> is a state-based conversational AI platform, fueled by deep-learning techniques and a contextual, top down approach to dialog management.</p>
+      <h2 class="display-2">Clinc</h2>
+      <p class="display-1">Redefining Conversation AI for Enterprise.</p>
+      <h4 class="overline">ABOUT</h4>
+      <p class="font-weight-light"><a href="https://clinc.com" target="_blank">Clinc</a> is a state-based conversational AI platform, fueled by deep-learning techniques and a contextual, top down approach to dialog management.</p>
       <img width="70%" src="@/assets/images/portfolio/clinc/clinc.png" />
       <p style="font-size: small; font-weight: 100">Clinc's State Graph builder page.</p>
       <h4 class="headline">PROJECT 1</h4>
@@ -24,21 +24,22 @@
           <img width="70%" src="@/assets/images/portfolio/clinc/3.png" /><br>
       </div>
       <h4 class="headline">PROJECT 2</h4>
-      <h5>INSTITUTION API</h5>
-      <h6>PROBLEM</h6>
-      <p>In Clinc’s legacy code, Institutions’ metadata (highly abstracted users) was being loaded via statically lived Json fixture files. In Clinc’s legacy code, Institutions’ metadata (highly abstracted users) was being loaded via statically lived <a href="https://code.djangoproject.com/wiki/Fixtures" target="_blank">json fixture files</a>. One of the imperative Infrastructure goals was to modify our stack to be more nimble and easily deployable. To do this, we needed to transition our Institution Deployment model to be more dynamic.</p>
-      <h6>PROCESS</h6>
+      <h5 class="overline">INSTITUTION API</h5>
+      <h6 class="overline">PROBLEM</h6>
+      <p class="font-weight-light">In Clinc’s legacy code, Institutions’ metadata (highly abstracted users) was being loaded via statically lived Json fixture files. In Clinc’s legacy code, Institutions’ metadata (highly abstracted users) was being loaded via statically lived <a href="https://code.djangoproject.com/wiki/Fixtures" target="_blank">json fixture files</a>. One of the imperative Infrastructure goals was to modify our stack to be more nimble and easily deployable. To do this, we needed to transition our Institution Deployment model to be more dynamic.</p>
+      <h6 class="display-1">PROCESS</h6>
       <p>My development approach was fairly bottom-up, beginning with the database model schema changes and migrations.</p>
       <p>I then built out our REST API endpoints, following proper serialization and error handling patterns.</p>
       <p>I’m now implementing the front-end in the platform to consume the API which will allow our core users to be shipped a "clean" software stack, and customize their experience with on-premise institution creation. In doing this, I enhanced and migrated static pages to a Single-Page Application utilizing Vue, in conjunction with Typescript, LESS, and BEM standards. For validation of the application, I’m creating end-to-end test cases using our recently integrated Cypress testing framework.</p>
-      <h6>RESULT</h6>
+      <h6 class="overline">BEFORE</h6>
       <img width="100%" src="@/assets/images/portfolio/clinc/before.png" />
       <p style="font-size: small; font-weight: 100">User Management page before.</p>
-      <h6 style="font-weight: 100">SPRINT #1</h6>
+      <h6 class="display-1">ITERATIONS</h6>
+      <h6 class="overline" style="font-weight: 100">SPRINT #1</h6>
       <img style="font-size: small" width="100%" src="@/assets/images/portfolio/clinc/gif2.gif" /><p style="font-size: small; font-weight: 100">Revamped User Management page.</p>
       <img width="100%" src="@/assets/images/portfolio/clinc/gif1.gif" /><p style="font-size: small; font-weight: 100">Institution Management page.</p>
       <p>View the feature in its entirety <a href="https://www.youtube.com/embed/MT7NfmbBMg0" target="_blank">here</a>.</p>
-      <h4>REFLECTIONS AND FUTURE WORK</h4>
+      <h4 class="display-1">REFLECTIONS AND FUTURE WORK</h4>
       <p>As I'm currently training to become a Solutions Architect, I'm hoping to incorporate design principles into our product development workflow.</p>
       <p>I will have the unique opportunity to interact with our clients throughout the deployment and development lifecycles. The UX space surrounding building conversational agents is essentailly untouched. I hope to help contribute and build frameworks for evaluating conversations, as well as the technology that empowers them.</p>
       <p>I'm hoping to pursue a graduate program in design and HCI next year in order to further my design skill set, and gain the appropriate knowledge to fulfill my dream of bringing UX to clients.</p>

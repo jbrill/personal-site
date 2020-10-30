@@ -16,7 +16,7 @@ import Dreamgigs from "./components/Dreamgigs.vue";
 // import MusicAndCulture from "./components/MusicAndCulture.vue";
 import GenreMixer from "./components/GenreMixer.vue";
 import Clinc from "./components/Clinc.vue";
-// import MajorStudio from "./components/MajorStudio.vue";
+import SevenInSeven from "./components/7-in-7.vue";
 
 Vue.use(Router);
 
@@ -72,17 +72,24 @@ const router = new Router({
       name: "clinc",
       component: Clinc
     },
-    // {
-    //   path: "/portfolio/major-studio",
-    //   name: "major-studio",
-    //   component: MajorStudio
-    // },
+    {
+      path: "/7-in-7",
+      name: "7-in-7",
+      component: SevenInSeven
+    },
     // {
     //   path: "/resume",
     //   name: "resume",
     //   component: Resume
     // },
-  ]
+  ],
+  scrollBehavior (to, from, savedPosition) {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve({ x: 0, y: 800 })
+      }, 500)
+    })
+  }
 });
 
 new Vue({

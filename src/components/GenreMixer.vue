@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h2 style="margin: 0; ">GENRE MIXER</h2>
-    <p style="font-style: italic;">An interactive dynamic sampling tool for artists.</p>
+    <h2 class="display-2">Genre Mixer</h2>
+    <p class="display-1">An interactive dynamic sampling tool for artists.</p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/Iv-TAOSdByk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <h4>COURSE</h4>
     <p>University of Michigan, Ann Arbor</p>
