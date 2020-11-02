@@ -1,13 +1,28 @@
 <template>
   <v-container>
-    <v-container>
-      <h2 class="display-2">7-in-7</h2>
-      <h2 class="display-1">Design Challenge</h2>
-    </v-container>
-    <v-container>
-      <h5 class="overline">Major Studio 1 - Project Overview</h5>
-      <h5 class="font-weight-light">Conceptualize, produce, and document 7 projects in 7 days for Major Studio 1.</h5>
-    </v-container>
+    <v-layout flex>
+      <v-container>
+        <v-container>
+          <h2 class="display-2">7-in-7</h2>
+          <h2 class="display-1">Design Challenge</h2>
+        </v-container>
+        <v-container>
+          <h5 class="overline">Major Studio 1 - Project Overview</h5>
+          <h5 class="font-weight-light">Conceptualize, produce, and document 7 projects in 7 days for Major Studio 1.</h5>
+        </v-container>
+      </v-container>
+      <v-container>
+        <v-list nav>
+          <v-list-item class="overline">Day 1: Gears of Time</v-list-item>
+          <v-list-item class="overline">Day 2: Brave New Password</v-list-item>
+          <v-list-item class="overline">Day 3: Twitter in Text</v-list-item>
+          <v-list-item class="overline">Day 4: Hash Rate Art</v-list-item>
+          <v-list-item class="overline">Day 5: Transportive Film</v-list-item>
+          <v-list-item class="overline">Day 6: Cognitive Behavioral Therapy Toolkit</v-list-item>
+          <v-list-item class="overline">Day 7: Portfolio Redesign</v-list-item>
+        </v-list>
+      </v-container>
+    </v-layout>
     <v-timeline>
       <v-timeline-item
         color="cyan"
