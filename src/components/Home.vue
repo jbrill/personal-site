@@ -1,236 +1,187 @@
 <template>
   <!-- Based off https://codepen.io/franky/pen/LGMWPK -->
-
-  <canvas @click="handleRoute" ref="canvas" class="canvas__contain"></canvas>
+  <v-container>
+    <v-layout flex justify-space-between>
+      <v-container class="content__contain__left">
+        <v-container>
+          <router-link tag="h1" to="/" class="title__contain">JASON BRILL</router-link>
+          <span class="overline">Creative Engineer</span>
+        </v-container>
+        <v-container>
+          <span class="body-2">
+            I’m a software engineer and user interface designer currently pursuing an MFA in <a href="https://www.newschool.edu/parsons/mfa-design-technology/" target="_blank">Design & Technology</a> at Parsons School of Design.  My undergraduate background is in <a href="https://lsa.umich.edu/lsa/academics/majors-minors/computer-science-major.html" target="_blank">Computer Science</a> from the University of Michigan.
+          </span>
+        </v-container>
+        <v-container>
+          <span class="body-2">
+            Previously, I wore several hats at <a href="https://clinc.com" target="_blank">Clinc</a>, where I worked as a Platform Engineer, Infrastructure Engineer, and Client Success Engineer.
+          </span>
+        </v-container>
+        <v-container>
+          <span class="body-2">
+            My interests lie in the <strong>exploration between the physical world and the digital</strong>. My recent projects explore how community-driven information affects values and perception, how interfaces can influence music listening and curation techniques, and ultimately how to cultivate healthier relationships between people and the tools that they use.
+          </span>
+        </v-container>
+        <v-container>
+          <span class="body-2">
+            Find me on <a href="https://github.com/jbrill" target="_blank">Github</a>, <a href="https://gitlab.com/jbrill" target="_blank">Gitlab</a>, <a href="https://linkedin.com/in/jlbrill" target="_blank">LinkedIn</a>, <a href="https://soundcloud.com/brillay" target="_blank">Soundcloud</a>, or <a href="https://twitter.com/jbrill_" target="_blank">Twitter</a>.
+            Check out my resume <a href="https://drive.google.com/file/d/1hLJvyhbiLcL-jB-BnPVV6Rey2ECQ2LHr/view?usp=sharing" target="_blank">here</a>.
+          </span>
+        </v-container>
+        <v-container>
+          <span class="body-2">
+            Let's connect! Reach out to me at brilj112[at]newschool[dot]edu.
+          </span>
+        </v-container>
+      </v-container>
+      <v-divider vertical></v-divider>
+      <v-container class="right-contain">
+        <Canvas />
+        <v-row justify-content>
+          <v-col class="flex align-center" md="6" v-for="(card, index) in cards" :key="index" >
+            <router-link :to="card.to" tag="a" style="text-decoration: none;" class="portfolio__contain">
+                <v-card hover>
+                  <v-card-title
+                    class="
+                      title
+                      font-weight-light
+                      headerClass
+                    "
+                  >
+                  <v-row align="center">
+                    <v-tooltip top>
+                      <template v-slot:activator="{ on, attrs }">
+                        
+                        <svg v-on="on" v-bind="attrs" height="10" width="10">
+                          <circle cx="5" cy="5" r="3" stroke="grey" stroke-width="0.5" :fill="card.live ? 'lime' : 'red'" />
+                        </svg>
+                      </template>
+                      <span v-if="card.live">Site is live</span>
+                      <span v-else>Site is not live</span>
+                    </v-tooltip>
+                    <span style="padding-left: 5px">{{ card.title.toUpperCase() }}</span>
+                    </v-row>
+                  </v-card-title>
+                  <v-card-subtitle class="pb-0">
+                    {{ card.description }}
+                  </v-card-subtitle>
+              
+                  <v-card-text class="text--primary">
+                    <v-chip-group column>
+                      <v-chip x-small label outlined v-for="(skill, skillIdx) in card.skills" :key="'skill' + skillIdx">{{ skill }}</v-chip>
+                    </v-chip-group>
+                    <v-layout justify-space-between flex>
+                      <span class="overline">{{ card.date }}</span>
+                      <a @click.prevent="" v-if="card.live" class="overline" :href="card.external" target="_blank">link</a>
+                    </v-layout>
+                  </v-card-text>
+                </v-card>
+            </router-link>
+          </v-col>
+        </v-row>
+      </v-container>
+    </v-layout>
+  </v-container>
 </template>
 
 <script>
-import Base from "./Base.vue";
+import Canvas from '../components/Canvas.vue';
 
 export default {
   name: "Home",
   components: {
-    Base
+    Canvas,
   },
-  data() {
+  data () {
     return {
-      connections: []
-    };
-  },
-  methods: {
-    handleRoute() {
-       this.$router.push('/portfolio')
+      cards: [
+        // {
+        //   'title': 'DRUMROSE',
+        //   'skills': ['Product', 'Full-Stack', 'Microservice Architecture', 'Continuous Integration'],
+        //   'to': 'drumrose',
+        //   'description': 'Building an inclusive and immersive music facilitation platform.',
+        //   'date': '04/2020 - Present',
+        //   'live': true,
+        //   'external': 'https://drumrose.com'
+        // },
+        {
+          'title': 'SUBWAY GUIDE',
+          'skills': ['DataVis', 'D3js', 'Illustrator', 'Vue'],
+          'to': 'subway-guide',
+          'description': 'A data visualization of the \'State of the Subways\' Report Card',
+          'date': '02/2021',
+          'live': true,
+          'external': 'https://subway.guide'
+        },
+        {
+          'title': 'NEWS FEELING',
+          'skills': ['DataVis', 'VueJS', 'NYT API', 'Sentiment Analysis'],
+          'to': 'news-feeling',
+          'src': '@/assets/images/portfolio/clinc/clinc_intro.png',
+          'description': 'A Sentiment Analysis Visualization Tool for The New York Times',
+          'date': '01/2021',
+          'live': true,
+          'external': 'https://newsfeeling.com'
+        },
+        {
+          'title': '7-in-7',
+          'skills': ['RAPID PROTOTYPING', 'FULL-STACK ENGINEERING', 'P5js', 'Figma', 'FILM PHOTOGRAPHY', 'After Effects'],
+          'to': '7-in-7',
+          'src': '@/assets/images/portfolio/clinc/clinc_intro.png',
+          'description': 'Creating 7 projects in 7 days for Major Studio 1 at Parsons.',
+          'date': 'Fall 2020',
+          'live': false,
+        },
+        // {
+        //   'title': 'Disrupted Entry',
+        //   'skills': ['FULL-STACK ENGINEERING', 'DATA VIS'],
+        //   'to': 'disrupted-entry',
+        //   'src': '@/assets/images/portfolio/clinc/clinc_intro.png',
+        //   'description': 'Expressing passport-entry implications before and after the COVID pandemic.',
+        //   'date': '10/2020',
+        //   'live': true,
+        //   'external': 'https://disruptedentry.com/'
+        // },
+        {
+          'title': 'Clinc',
+          'skills': ['Platform', 'Infrastructure', 'Client Deployment'],
+          'to': 'clinc',
+          'src': '@/assets/images/portfolio/clinc/clinc_intro.png',
+          'description': 'Selected projects from my work as an engineer at Clinc, a conversational AI startup.',
+          'date': '08/2018 - 04/2020',
+          'live': true,
+          'external': 'https://api.clinc.ai'
+        },
+        {
+          'title': 'Dreamgigs',
+          'skills': ['USER RESEARCH', 'RAPID APPLICATION DEVELOPMENT'],
+          'to': 'dreamgigs',
+          'src': 'images/portfolio/clinc/clinc_intro.png',
+          'description': 'Prototyping and engineering work for the HCI department at the University of Michigan.',
+          'date': 'Summer, Fall 2017',
+          'live': false,
+        },
+        {
+          'title': 'Photojournalism',
+          'skills': ['35mm Film'],
+          'to': 'disruption',
+          'src': 'images/portfolio/clinc/clinc_intro.png',
+          'description': 'Photojournalist exploration of the relationship between man and machine, 35mm.',
+          'date': 'Fall 2017',
+          'live': false,
+        },
+        {
+          'title': 'Genre Mixer',
+          'skills': ['ALGORITHMIC COMPOSITION'],
+          'to': 'genre-mixer',
+          'src': 'images/portfolio/clinc/clinc_intro.png',
+          'description': 'Experimental max/msp patch and web application.',
+          'date': 'Fall 2016',
+          'live': false,
+        },
+      ]
     }
   },
-  mounted() {
-    var ParticleNetworkAnimation, PNA;
-    ParticleNetworkAnimation = PNA = function() {};
-
-    PNA.prototype.init = function(canvas) {
-      this.ctx = canvas.getContext("2d");
-      this.canvas = canvas;
-      this.canvas.width = window.innerWidth;
-      this.canvas.height = window.innerHeight;
-
-      var grd = this.ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
-      grd.addColorStop(0, "white");
-      grd.addColorStop(1, "transparent");
-      this.particleNetwork = new ParticleNetwork(this);
-
-      // this.bindUiActions();
-
-      return this;
-    };
-
-    var Particle = function(parent, x, y) {
-      this.network = parent;
-      this.canvas = parent.canvas;
-      this.ctx = parent.ctx;
-      this.particleColor = returnRandomArrayitem(
-        this.network.options.particleColors
-      );
-      this.radius = getLimitedRandom(0.1, 1.5);
-      this.opacity = 0;
-      this.x = x || Math.random() * this.canvas.width;
-      this.y = y || Math.random() * this.canvas.height;
-      this.velocity = {
-        x: (Math.random() - 0.5) * parent.options.velocity,
-        y: (Math.random() - 0.5) * parent.options.velocity
-      };
-    };
-
-    Particle.prototype.update = function() {
-      if (this.opacity < 1) {
-        this.opacity += 0.01;
-      } else {
-        this.opacity = 1;
-      }
-      // Change dir if outside map
-      if (this.x > this.canvas.width + 100 || this.x < -100) {
-        this.velocity.x = -this.velocity.x;
-      }
-      if (this.y > this.canvas.height + 100 || this.y < -100) {
-        this.velocity.y = -this.velocity.y;
-      }
-
-      // Update position
-      this.x += this.velocity.x;
-      this.y += this.velocity.y;
-    };
-
-    Particle.prototype.draw = function() {
-      // Draw particle
-      this.ctx.beginPath();
-      this.ctx.fillStyle = this.particleColor;
-      this.ctx.globalAlpha = this.opacity;
-      this.ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
-      this.ctx.fill();
-    };
-
-    var ParticleNetwork = function(parent) {
-      this.options = {
-        velocity: 0.4, // the higher the faster
-        density: 10000, // the lower the denser
-        netLineDistance: 100,
-        netLineColor: "#5DC0E8",
-        particleColors: ["#FFFFFF"]
-      };
-      this.canvas = parent.canvas;
-      this.ctx = parent.ctx;
-
-      this.init();
-    };
-
-    ParticleNetwork.prototype.init = function() {
-      // Create particle objects
-      this.createParticles(true);
-
-      // Update canvas
-      this.animationFrame = requestAnimationFrame(this.update.bind(this));
-    };
-
-    ParticleNetwork.prototype.createParticles = function(isInitial) {
-      // Initialise / reset particles
-      var me = this;
-      this.particles = [];
-      var quantity =
-        (this.canvas.width * this.canvas.height) / this.options.density;
-
-      if (isInitial) {
-        var counter = 0;
-        clearInterval(this.createIntervalId);
-        this.createIntervalId = setInterval(
-          function() {
-            if (counter < quantity - 1) {
-              // Create particle object
-              for (var i = 0; i < 4; i++) {
-                this.particles.push(new Particle(this));
-              }
-            } else {
-              clearInterval(me.createIntervalId);
-            }
-            counter++;
-          }.bind(this),
-          50
-        );
-      } else {
-        // Create particle objects
-        for (var i = 0; i < quantity; i++) {
-          this.particles.push(new Particle(this));
-        }
-      }
-    };
-
-    ParticleNetwork.prototype.createInteractionParticle = function() {
-      // Add interaction particle
-      this.interactionParticle = new Particle(this);
-      this.interactionParticle.velocity = {
-        x: 0,
-        y: 0
-      };
-      this.particles.push(this.interactionParticle);
-      return this.interactionParticle;
-    };
-
-    ParticleNetwork.prototype.removeInteractionParticle = function() {
-      // Find it
-      var index = this.particles.indexOf(this.interactionParticle);
-      if (index > -1) {
-        // Remove it
-        this.interactionParticle = undefined;
-        this.particles.splice(index, 1);
-      }
-    };
-
-    ParticleNetwork.prototype.update = function() {
-      if (this.canvas) {
-        this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
-        this.ctx.globalAlpha = 1;
-
-        // Draw connections
-        for (var i = 0; i < this.particles.length; i++) {
-          for (var j = this.particles.length - 1; j > i; j--) {
-            var distance,
-              p1 = this.particles[i],
-              p2 = this.particles[j];
-
-            // check very simply if the two points are even a candidate for further measurements
-            distance = Math.min(Math.abs(p1.x - p2.x), Math.abs(p1.y - p2.y));
-            if (distance > this.options.netLineDistance) {
-              continue;
-            }
-
-            // the two points seem close enough, now let's measure precisely
-            distance = Math.sqrt(
-              Math.pow(p1.x - p2.x, 2) + Math.pow(p1.y - p2.y, 2)
-            );
-            if (distance > this.options.netLineDistance) {
-              continue;
-            }
-
-            this.ctx.beginPath();
-            this.ctx.strokeStyle = this.options.netLineColor;
-            this.ctx.globalAlpha =
-              ((this.options.netLineDistance - distance) /
-                this.options.netLineDistance) *
-              p1.opacity *
-              p2.opacity;
-            this.ctx.lineWidth = 0.7;
-            this.ctx.moveTo(p1.x, p1.y);
-            this.ctx.lineTo(p2.x, p2.y);
-            this.ctx.stroke();
-          }
-        }
-
-        // Draw particles
-        for (var i = 0; i < this.particles.length; i++) {
-          this.particles[i].update();
-          this.particles[i].draw();
-        }
-
-        if (this.options.velocity !== 0) {
-          this.animationFrame = requestAnimationFrame(this.update.bind(this));
-        }
-      } else {
-        cancelAnimationFrame(this.animationFrame);
-      }
-    };
-
-    var getLimitedRandom = function(min, max, roundToInteger) {
-      var number = Math.random() * (max - min) + min;
-      if (roundToInteger) {
-        number = Math.round(number);
-      }
-      return number;
-    };
-
-    var returnRandomArrayitem = function(array) {
-      return array[Math.floor(Math.random() * array.length)];
-    };
-
-    var pna = new ParticleNetworkAnimation();
-    pna.init(this.$refs.canvas);
-  }
 };
 </script>
 

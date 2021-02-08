@@ -1,5 +1,6 @@
 <template>
   <v-container>
+    <v-btn to="/" elevation="1" icon><v-icon dark>mdi-arrow-left-bold</v-icon></v-btn>
     <v-layout flex>
       <v-container>
         <v-container>
@@ -12,14 +13,14 @@
         </v-container>
       </v-container>
       <v-container>
-        <v-list nav>
-          <v-list-item class="overline">Day 1: Gears of Time</v-list-item>
-          <v-list-item class="overline">Day 2: Brave New Password</v-list-item>
-          <v-list-item class="overline">Day 3: Twitter in Text</v-list-item>
-          <v-list-item class="overline">Day 4: Hash Rate Art</v-list-item>
-          <v-list-item class="overline">Day 5: Transportive Film</v-list-item>
-          <v-list-item class="overline">Day 6: Cognitive Behavioral Therapy Toolkit</v-list-item>
-          <v-list-item class="overline">Day 7: Portfolio Redesign</v-list-item>
+        <v-list style="margin: 2px" nav>
+          <v-list-item class="overline">Day 1: <span class="caption">Gears of Time</span></v-list-item>
+          <v-list-item class="overline">Day 2: <span class="caption">Brave New Password</span></v-list-item>
+          <v-list-item class="overline">Day 3: <span class="caption">Twitter in Text</span></v-list-item>
+          <v-list-item class="overline">Day 4: <span class="caption">Hash Rate Art</span></v-list-item>
+          <v-list-item class="overline">Day 5: <span class="caption">Transportive Film</span></v-list-item>
+          <v-list-item class="overline">Day 6: <span class="caption">Cognitive Behavioral Therapy Toolkit</span></v-list-item>
+          <v-list-item class="overline">Day 7: <span class="caption">Portfolio Redesign</span></v-list-item>
         </v-list>
       </v-container>
     </v-layout>

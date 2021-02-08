@@ -4,16 +4,14 @@ import App from "./App.vue";
 import vuetify from '@/plugins/vuetify' // path to vuetify export
 import 'babel-polyfill';
 
-
-// import About from "./components/About.vue";
-// import Home from "./components/Home.vue";
+import Home from "./components/Home.vue";
 // import Resume from "./components/Resume.vue";
-
-// import Portfolio from "./components/Portfolio.vue";
-// import Neptune from "./components/Neptune.vue";
+import DisruptedEntry from "./components/DisruptedEntry.vue";
+import NewsFeeling from "./components/NewsFeeling.vue";
+import Drumrose from "./components/Drumrose.vue";
 import Disruption from "./components/Disruption.vue";
 import Dreamgigs from "./components/Dreamgigs.vue";
-// import MusicAndCulture from "./components/MusicAndCulture.vue";
+import SubwayGuide from "./components/SubwayGuide.vue";
 import GenreMixer from "./components/GenreMixer.vue";
 import Clinc from "./components/Clinc.vue";
 import SevenInSeven from "./components/7-in-7.vue";
@@ -26,32 +24,8 @@ const router = new Router({
     {
       path: "/",
       name: "home",
+      component: Home,
     },
-    // {
-    //   path: "/vis",
-    //   name: "vis",
-    //   component: Home
-    // },
-    // {
-    //   path: "/about",
-    //   name: "about",
-    //   component: About
-    // },
-    // {
-    //   path: "/portfolio",
-    //   name: "portfolio",
-    //   component: Portfolio
-    // },
-    // {
-    //   path: "/portfolio/neptune",
-    //   name: "neptune",
-    //   component: Neptune
-    // },
-    // {
-    //   path: "/portfolio/music_and_culture",
-    //   name: "music_and_culture",
-    //   component: MusicAndCulture
-    // },
     {
       path: "/disruption",
       name: "disruption",
@@ -77,19 +51,27 @@ const router = new Router({
       name: "7-in-7",
       component: SevenInSeven
     },
-    // {
-    //   path: "/resume",
-    //   name: "resume",
-    //   component: Resume
-    // },
+    {
+      path: "/subway-guide",
+      name: "subway_guide",
+      component: SubwayGuide
+    },
+    {
+      path: "/drumrose",
+      name: "drumrose",
+      component: Drumrose
+    },
+    {
+      path: "/news-feeling",
+      name: "news_feeling",
+      component: NewsFeeling
+    },
+    {
+      path: "/disrupted-entry",
+      name: "disrupted_entry",
+      component: DisruptedEntry
+    },
   ],
-  scrollBehavior (to, from, savedPosition) {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        resolve({ x: 0, y: 800 })
-      }, 500)
-    })
-  }
 });
 
 new Vue({

@@ -75,7 +75,6 @@
           <p>Spring 2014</p>
         </div>
       </router-link>
-    </Base>
   </div>
 </template>
 

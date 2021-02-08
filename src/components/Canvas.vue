@@ -5,6 +5,7 @@
 
 <script>
 export default {
+  name: 'canvas',
   data() {
     return {
       connections: []
