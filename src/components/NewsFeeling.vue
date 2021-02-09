@@ -73,7 +73,7 @@
     <v-container>
       <h2 class="header-1">Future Work</h2>
       <p class="body-2">I'd like to implement different sorting capabilities for the news articles. Right now, the application fetches the articles by most recent. It might be interesting to have a sort capability for sentiment score.</p>
-      <p class="body-2">To understand how this tool might be useful to a certain audience, I'd like to conduct surveys and user interviews to better sculpt this tool for a specific audience.</p>
+      <p class="body-2">As is, the tool currently serves two different audiences. I'd like to conduct user interviews with journalists to see how and why this tool might fit their needs, and iterate on the design based on those insights.</p>
     </v-container>
   </v-container>
 </template>

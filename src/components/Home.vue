@@ -9,7 +9,7 @@
         </v-container>
         <v-container>
           <span class="body-2">
-            I’m a software engineer and user interface designer currently pursuing an MFA in <a href="https://www.newschool.edu/parsons/mfa-design-technology/" target="_blank">Design & Technology</a> at Parsons School of Design.  My undergraduate background is in <a href="https://lsa.umich.edu/lsa/academics/majors-minors/computer-science-major.html" target="_blank">Computer Science</a> from the University of Michigan.
+            I’m a software engineer, user interface designer, and artist currently pursuing an MFA in <a href="https://www.newschool.edu/parsons/mfa-design-technology/" target="_blank">Design & Technology</a> at Parsons School of Design.  My undergraduate background is in <a href="https://lsa.umich.edu/lsa/academics/majors-minors/computer-science-major.html" target="_blank">Computer Science</a> from the University of Michigan.
           </span>
         </v-container>
         <v-container>
