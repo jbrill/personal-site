@@ -25,7 +25,7 @@
         <v-container>
           <span class="body-2">
             Find me on <a href="https://github.com/jbrill" target="_blank">Github</a>, <a href="https://gitlab.com/jbrill" target="_blank">Gitlab</a>, <a href="https://linkedin.com/in/jlbrill" target="_blank">LinkedIn</a>, <a href="https://soundcloud.com/brillay" target="_blank">Soundcloud</a>, or <a href="https://twitter.com/jbrill_" target="_blank">Twitter</a>.
-            Check out my resume <a href="https://drive.google.com/file/d/1hLJvyhbiLcL-jB-BnPVV6Rey2ECQ2LHr/view?usp=sharing" target="_blank">here</a>.
+            Check out my <a href="https://www.dropbox.com/s/523u4qjxf4m2uv2/JasonBrill2021.pdf?dl=0" target="_blank">resume</a>.
           </span>
         </v-container>
         <v-container>
