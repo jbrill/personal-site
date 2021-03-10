@@ -3,6 +3,7 @@ import Router from "vue-router";
 import App from "./App.vue";
 import vuetify from '@/plugins/vuetify' // path to vuetify export
 import 'babel-polyfill';
+import VueAnalytics from 'vue-analytics'
 
 import Home from "./components/Home.vue";
 // import Resume from "./components/Resume.vue";
@@ -16,7 +17,6 @@ import GenreMixer from "./components/GenreMixer.vue";
 import Clinc from "./components/Clinc.vue";
 import SevenInSeven from "./components/7-in-7.vue";
 
-Vue.use(Router);
 
 const router = new Router({
   mode: "history",
@@ -73,6 +73,14 @@ const router = new Router({
     },
   ],
 });
+
+Vue.use(
+  Router,
+  VueAnalytics, {
+    id: 'G-Q4YS1F5EBG',
+    router
+  }
+);
 
 new Vue({
   router,
